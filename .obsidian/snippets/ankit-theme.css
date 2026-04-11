@@ -1,0 +1,578 @@
+/* ============================================================
+   ANKIT DEV THEME — Obsidian 1.x
+   Built for: Software Dev · Data Engineer · GCP SRE
+   Aesthetic: Terminal-meets-Notion · Dark · Pro Dashboard
+   ============================================================ */
+
+/* ─── IMPORT FONTS ─────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+/* ─── CSS VARIABLES ─────────────────────────────────────────── */
+:root {
+  --font-text:         'Inter', sans-serif;
+  --font-monospace:    'JetBrains Mono', monospace;
+  --font-interface:    'Space Grotesk', sans-serif;
+
+  /* Core palette */
+  --bg-primary:        #0d1117;
+  --bg-secondary:      #161b22;
+  --bg-tertiary:       #21262d;
+  --bg-hover:          #30363d;
+
+  --border-subtle:     rgba(255,255,255,0.06);
+  --border-normal:     rgba(255,255,255,0.12);
+  --border-accent:     rgba(88,166,255,0.3);
+
+  --text-primary:      #e6edf3;
+  --text-secondary:    #8b949e;
+  --text-muted:        #484f58;
+
+  /* Accent colors — GCP/dev palette */
+  --accent-blue:       #58a6ff;
+  --accent-cyan:       #39d353;
+  --accent-purple:     #bc8cff;
+  --accent-orange:     #f78166;
+  --accent-yellow:     #e3b341;
+  --accent-green:      #3fb950;
+  --accent-pink:       #ff7eb6;
+  --accent-teal:       #56d3c9;
+
+  /* Glow effects */
+  --glow-blue:         0 0 12px rgba(88,166,255,0.25);
+  --glow-purple:       0 0 12px rgba(188,140,255,0.2);
+  --glow-green:        0 0 12px rgba(63,185,80,0.2);
+}
+
+/* ─── GLOBAL FONT OVERRIDE ──────────────────────────────────── */
+body, .workspace {
+  font-family: var(--font-interface) !important;
+}
+
+/* ─── WORKSPACE BACKGROUND ──────────────────────────────────── */
+.workspace-split.mod-root .workspace-leaf-content {
+  background: var(--bg-primary) !important;
+}
+
+.workspace-ribbon,
+.workspace-tabs,
+.workspace-tab-header-container {
+  background: var(--bg-secondary) !important;
+}
+
+/* ─── SIDEBAR ────────────────────────────────────────────────── */
+.nav-folder-title,
+.nav-file-title {
+  font-family: var(--font-interface);
+  font-size: 13px;
+  color: var(--text-secondary);
+  border-radius: 6px;
+  padding: 3px 8px;
+  transition: all 0.15s ease;
+}
+
+.nav-file-title:hover,
+.nav-folder-title:hover {
+  color: var(--text-primary);
+  background: var(--bg-tertiary);
+}
+
+.nav-file-title.is-active {
+  color: var(--accent-blue) !important;
+  background: rgba(88,166,255,0.08) !important;
+  border-left: 2px solid var(--accent-blue);
+  padding-left: 6px;
+}
+
+.nav-folder-title-content {
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* ─── TAB BAR ────────────────────────────────────────────────── */
+.workspace-tab-header {
+  font-family: var(--font-interface);
+  font-size: 13px;
+  border-radius: 6px 6px 0 0;
+  color: var(--text-secondary);
+}
+
+.workspace-tab-header.is-active {
+  color: var(--text-primary) !important;
+  background: var(--bg-primary) !important;
+  border-top: 2px solid var(--accent-blue) !important;
+}
+
+/* ─── READING VIEW ───────────────────────────────────────────── */
+.markdown-rendered,
+.markdown-preview-view {
+  font-family: var(--font-text);
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--text-primary);
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 2rem 2.5rem;
+}
+
+/* ─── HEADINGS ───────────────────────────────────────────────── */
+.markdown-rendered h1 {
+  font-family: var(--font-interface);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 0.6rem;
+  margin: 2.5rem 0 1rem;
+  letter-spacing: -0.3px;
+  background: linear-gradient(90deg, var(--accent-blue), var(--accent-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.markdown-rendered h2 {
+  font-family: var(--font-interface);
+  font-size: 1.45rem;
+  font-weight: 600;
+  color: var(--accent-blue);
+  margin: 2rem 0 0.75rem;
+  padding-left: 0.75rem;
+  border-left: 3px solid var(--accent-blue);
+}
+
+.markdown-rendered h3 {
+  font-family: var(--font-interface);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--accent-purple);
+  margin: 1.5rem 0 0.5rem;
+}
+
+.markdown-rendered h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--accent-teal);
+  margin: 1.2rem 0 0.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  font-size: 0.85rem;
+}
+
+/* ─── PARAGRAPHS & LISTS ─────────────────────────────────────── */
+.markdown-rendered p {
+  color: var(--text-secondary);
+  margin-bottom: 0.9rem;
+}
+
+.markdown-rendered ul,
+.markdown-rendered ol {
+  padding-left: 1.4rem;
+  margin-bottom: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.markdown-rendered li {
+  margin-bottom: 0.3rem;
+  line-height: 1.75;
+}
+
+.markdown-rendered li::marker {
+  color: var(--accent-blue);
+}
+
+/* ─── CODE BLOCKS ────────────────────────────────────────────── */
+.markdown-rendered pre,
+pre {
+  background: #010409 !important;
+  border: 1px solid var(--border-normal);
+  border-radius: 10px;
+  padding: 1.2rem 1.4rem;
+  margin: 1.2rem 0;
+  overflow-x: auto;
+  position: relative;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.04),
+              0 4px 20px rgba(0,0,0,0.4);
+}
+
+/* Code block language badge */
+.markdown-rendered pre::before {
+  content: attr(class);
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 10px;
+  font-family: var(--font-monospace);
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.markdown-rendered pre code,
+pre code {
+  font-family: var(--font-monospace) !important;
+  font-size: 13px !important;
+  line-height: 1.65;
+  color: #c9d1d9;
+  background: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+
+/* Inline code */
+.markdown-rendered code,
+code:not(pre code) {
+  font-family: var(--font-monospace) !important;
+  font-size: 13px;
+  background: rgba(110,118,129,0.14) !important;
+  color: var(--accent-orange) !important;
+  padding: 0.15em 0.45em;
+  border-radius: 5px;
+  border: 1px solid var(--border-subtle);
+}
+
+/* ─── BLOCKQUOTE ─────────────────────────────────────────────── */
+.markdown-rendered blockquote {
+  background: rgba(88,166,255,0.05);
+  border-left: 4px solid var(--accent-blue);
+  border-radius: 0 8px 8px 0;
+  padding: 1rem 1.2rem;
+  margin: 1.2rem 0;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.markdown-rendered blockquote p {
+  margin: 0;
+}
+
+/* ─── CALLOUT BOXES (Obsidian native) ────────────────────────── */
+.callout {
+  border-radius: 10px !important;
+  border: 1px solid var(--border-subtle) !important;
+  background: var(--bg-secondary) !important;
+  padding: 1rem 1.2rem !important;
+  margin: 1rem 0 !important;
+}
+
+.callout[data-callout="info"] {
+  background: rgba(88,166,255,0.06) !important;
+  border-color: rgba(88,166,255,0.3) !important;
+}
+
+.callout[data-callout="warning"],
+.callout[data-callout="caution"] {
+  background: rgba(227,179,65,0.06) !important;
+  border-color: rgba(227,179,65,0.3) !important;
+}
+
+.callout[data-callout="danger"],
+.callout[data-callout="error"] {
+  background: rgba(247,129,102,0.06) !important;
+  border-color: rgba(247,129,102,0.3) !important;
+}
+
+.callout[data-callout="success"],
+.callout[data-callout="check"] {
+  background: rgba(63,185,80,0.06) !important;
+  border-color: rgba(63,185,80,0.3) !important;
+}
+
+.callout[data-callout="tip"],
+.callout[data-callout="hint"] {
+  background: rgba(188,140,255,0.06) !important;
+  border-color: rgba(188,140,255,0.3) !important;
+}
+
+.callout-title {
+  font-family: var(--font-interface) !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.3px !important;
+}
+
+.callout-content {
+  font-size: 14px !important;
+  color: var(--text-secondary) !important;
+  margin-top: 0.5rem !important;
+}
+
+/* ─── TABLES ─────────────────────────────────────────────────── */
+.markdown-rendered table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13.5px;
+  font-family: var(--font-interface);
+  margin: 1.2rem 0;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--border-normal);
+}
+
+.markdown-rendered thead th {
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border-normal);
+  text-align: left;
+}
+
+.markdown-rendered tbody tr {
+  transition: background 0.12s;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.markdown-rendered tbody tr:hover {
+  background: rgba(88,166,255,0.04);
+}
+
+.markdown-rendered tbody td {
+  padding: 9px 14px;
+  color: var(--text-secondary);
+  vertical-align: top;
+}
+
+/* ─── HORIZONTAL RULE ────────────────────────────────────────── */
+.markdown-rendered hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-normal), transparent);
+  margin: 2.5rem 0;
+}
+
+/* ─── IMAGES ─────────────────────────────────────────────────── */
+.markdown-rendered img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--border-subtle);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+  display: block;
+  margin: 1.2rem auto;
+}
+
+/* ─── LINKS ──────────────────────────────────────────────────── */
+.markdown-rendered a {
+  color: var(--accent-blue) !important;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(88,166,255,0.3);
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.markdown-rendered a:hover {
+  color: #79c0ff !important;
+  border-color: var(--accent-blue);
+}
+
+/* ─── TAGS ───────────────────────────────────────────────────── */
+.tag {
+  background: rgba(88,166,255,0.1) !important;
+  color: var(--accent-blue) !important;
+  border: 1px solid rgba(88,166,255,0.2) !important;
+  border-radius: 20px !important;
+  padding: 2px 10px !important;
+  font-size: 12px !important;
+  font-family: var(--font-interface) !important;
+  font-weight: 500 !important;
+  text-decoration: none !important;
+}
+
+.tag:hover {
+  background: rgba(88,166,255,0.18) !important;
+}
+
+/* ─── CHECKBOXES / TASKS ─────────────────────────────────────── */
+.markdown-rendered .task-list-item-checkbox {
+  border-radius: 4px;
+  border: 1.5px solid var(--border-normal);
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.markdown-rendered li.task-list-item[data-task="x"] {
+  color: var(--text-muted);
+  text-decoration: line-through;
+}
+
+.markdown-rendered li.task-list-item[data-task="x"]::before {
+  color: var(--accent-green);
+}
+
+/* ─── SEARCH HIGHLIGHT ───────────────────────────────────────── */
+.search-result-file-matched-text,
+mark {
+  background: rgba(227,179,65,0.25) !important;
+  color: var(--accent-yellow) !important;
+  border-radius: 3px;
+  padding: 0 2px;
+}
+
+/* ─── EDITOR (Live Preview) ──────────────────────────────────── */
+.cm-editor {
+  font-family: var(--font-text) !important;
+  font-size: 15px;
+  background: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+}
+
+.cm-content {
+  font-family: var(--font-text) !important;
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 2rem 2.5rem !important;
+  line-height: 1.8;
+}
+
+/* Editor headings */
+.cm-header-1 {
+  font-family: var(--font-interface) !important;
+  font-size: 1.9rem !important;
+  font-weight: 700 !important;
+  color: var(--accent-blue) !important;
+}
+.cm-header-2 {
+  font-family: var(--font-interface) !important;
+  font-size: 1.4rem !important;
+  font-weight: 600 !important;
+  color: var(--accent-blue) !important;
+}
+.cm-header-3 {
+  font-family: var(--font-interface) !important;
+  font-size: 1.1rem !important;
+  color: var(--accent-purple) !important;
+}
+
+/* Editor inline code */
+.cm-inline-code {
+  font-family: var(--font-monospace) !important;
+  background: rgba(110,118,129,0.14) !important;
+  color: var(--accent-orange) !important;
+  padding: 1px 6px !important;
+  border-radius: 4px !important;
+}
+
+/* Active line subtle highlight */
+.cm-activeLine {
+  background: rgba(255,255,255,0.025) !important;
+  border-radius: 4px;
+}
+
+/* ─── SCROLLBAR ──────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--bg-hover);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+/* ─── STATUS BAR ─────────────────────────────────────────────── */
+.status-bar {
+  background: var(--bg-secondary) !important;
+  border-top: 1px solid var(--border-subtle) !important;
+  font-family: var(--font-monospace) !important;
+  font-size: 11px !important;
+  color: var(--text-muted) !important;
+}
+
+/* ─── MODAL / COMMAND PALETTE ────────────────────────────────── */
+.modal-container .modal,
+.prompt {
+  background: var(--bg-secondary) !important;
+  border: 1px solid var(--border-normal) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 24px 60px rgba(0,0,0,0.7) !important;
+}
+
+.prompt-input {
+  font-family: var(--font-interface) !important;
+  font-size: 15px !important;
+  background: var(--bg-tertiary) !important;
+  border-radius: 8px !important;
+  border: 1px solid var(--border-normal) !important;
+  color: var(--text-primary) !important;
+  padding: 10px 14px !important;
+}
+
+.suggestion-item.is-selected {
+  background: rgba(88,166,255,0.1) !important;
+  color: var(--accent-blue) !important;
+  border-radius: 6px;
+}
+
+/* ─── GRAPH VIEW ─────────────────────────────────────────────── */
+.graph-view.color-fill {
+  color: var(--accent-blue) !important;
+}
+
+/* ─── DEV-SPECIFIC: DATAVIEW TABLES ─────────────────────────── */
+.dataview.table-view-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  font-family: var(--font-interface);
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--border-normal);
+}
+
+.dataview.table-view-table thead th {
+  background: var(--bg-secondary) !important;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--text-secondary);
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border-normal);
+}
+
+.dataview.table-view-table tbody td {
+  padding: 8px 14px;
+  border-bottom: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+}
+
+.dataview.table-view-table tbody tr:hover td {
+  background: rgba(88,166,255,0.04);
+  color: var(--text-primary);
+}
+
+/* ─── DEV BADGE SHORTCODES ───────────────────────────────────── */
+/* Usage in notes: add CSS classes via Obsidian CSS classes */
+
+/* ─── FRONTMATTER BLOCK ──────────────────────────────────────── */
+.frontmatter-container {
+  background: var(--bg-secondary) !important;
+  border: 1px solid var(--border-subtle) !important;
+  border-radius: 8px !important;
+  font-family: var(--font-monospace) !important;
+  font-size: 12px !important;
+  color: var(--text-muted) !important;
+  padding: 0.75rem 1rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+/* ─── FOLD INDICATORS ────────────────────────────────────────── */
+.cm-fold-widget {
+  color: var(--accent-blue) !important;
+}
+
+/* ─── PRINT / EXPORT ─────────────────────────────────────────── */
+@media print {
+  .workspace-ribbon, .workspace-tabs, .status-bar { display: none; }
+  .markdown-rendered { max-width: 100%; padding: 1rem; }
+}
