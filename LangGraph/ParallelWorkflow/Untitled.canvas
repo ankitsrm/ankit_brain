@@ -3,15 +3,35 @@
 		{
 			"id":"9f8085c0d2e697f5",
 			"type":"text",
-			"text":"",
+			"text":"System is asdrunning ",
 			"styleAttributes":{},
-			"x":-1140,
-			"y":-380,
-			"width":260,
-			"height":60
+			"x":-3540,
+			"y":-1120,
+			"width":280,
+			"height":120
+		},
+		{
+			"id":"6c5e2caec005483f",
+			"type":"text",
+			"text":"Ankit is running for the system application\n```Java \nsystem.out.println(\"Running for system use case \");\n```\n\nCan you think for some thing",
+			"styleAttributes":{},
+			"x":-2620,
+			"y":-1200,
+			"width":520,
+			"height":280
 		}
 	],
-	"edges":[],
+	"edges":[
+		{
+			"id":"594b35ea4c967e29",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"9f8085c0d2e697f5",
+			"fromSide":"right",
+			"toNode":"6c5e2caec005483f",
+			"toSide":"left"
+		}
+	],
 	"metadata":{
 		"version":"1.0-1.0",
 		"frontmatter":{}
