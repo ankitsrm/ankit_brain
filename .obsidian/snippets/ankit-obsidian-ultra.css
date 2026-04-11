@@ -403,7 +403,7 @@ body {
 
 /* ─── Paragraphs & lists ──────────────────────────────────── */
 .markdown-rendered p {
-  color: var(--text-secondary) !important;
+  color: var(--text-bright) !important;
   margin-bottom: 0.35rem !important;
 }
 
@@ -411,7 +411,7 @@ body {
 .markdown-rendered ol {
   padding-left: 1.2rem !important;
   margin-bottom: 0.35rem !important;
-  color: var(--text-secondary) !important;
+  color: var(--text-bright) !important;
 }
 
 .markdown-rendered li {
@@ -2634,6 +2634,15 @@ code {
   margin: 0 !important;
   border: none !important;
   background: transparent !important;
+}
+
+/* Brighten canvas text specifically for high contrast against the dark cards */
+.canvas-node-content .markdown-rendered p,
+.canvas-node-content .markdown-rendered ul,
+.canvas-node-content .markdown-rendered ol,
+.canvas-node-content .markdown-rendered li {
+  color: var(--text-bright) !important;
+  font-weight: 500 !important;
 }
 
 /* Premium Embedded Code Blocks inside Canvas */
