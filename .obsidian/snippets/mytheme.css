@@ -1,0 +1,88 @@
+/* ================================
+   WORKS IN OBSIDIAN 1.x (2024+)
+================================ */
+
+/* Reading view container */
+.markdown-rendered {
+  max-width: 860px;
+  margin: auto;
+  line-height: 1.75;
+  font-size: 15.5px;
+}
+
+/* Headings */
+.markdown-rendered h1 {
+  font-size: 28px;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  padding-bottom: 8px;
+  margin-top: 2rem;
+}
+
+.markdown-rendered h2 {
+  font-size: 21px;
+  font-weight: 600;
+  color: #8ab4f8;
+  margin-top: 1.8rem;
+}
+
+.markdown-rendered h3 {
+  font-size: 17px;
+  color: #c792ea;
+  margin-top: 1.5rem;
+}
+
+/* Code blocks — works for both editor + reading */
+.HyperMD-codeblock, pre code {
+  font-family: "JetBrains Mono", "Fira Code", monospace !important;
+}
+
+pre {
+  background: #0d1117 !important;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+/* Inline code */
+.markdown-rendered code {
+  background: rgba(255,255,255,0.08);
+  padding: 2px 6px;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+/* Blockquote */
+.markdown-rendered blockquote {
+  border-left: 4px solid #8ab4f8;
+  padding-left: 1rem;
+  color: #aaa;
+  margin: 1rem 0;
+  border-radius: 0 6px 6px 0;
+  background: rgba(138,180,248,0.05);
+}
+
+/* Images */
+.markdown-rendered img {
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+}
+
+/* Tags */
+.tag {
+  background: rgba(138,180,248,0.12) !important;
+  color: #8ab4f8 !important;
+  border-radius: 6px;
+  padding: 2px 8px;
+  font-size: 12px;
+}
+
+/* Sidebar file explorer */
+.nav-file-title, .nav-folder-title {
+  font-size: 13px;
+  border-radius: 5px;
+}
+
+/* Dark background for the reading pane */
+.markdown-preview-section {
+  background: #0b0f14;
+}
