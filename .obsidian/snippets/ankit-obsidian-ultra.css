@@ -1,0 +1,1688 @@
+/* ============================================================
+   ANKIT OBSIDIAN ULTRA — Premium Dark Theme
+   Version: 2.0 · April 2026
+   Aesthetic: True-Black · Monochrome · Glass-Morphism · Dev Pro
+   ============================================================ */
+
+/* ─── IMPORT FONTS ─────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ─── DESIGN TOKENS ────────────────────────────────────────── */
+:root {
+  /* === BACKGROUNDS — OLED TRUE BLACK === */
+  --ultra-void:        #000000;
+  --ultra-base:        #060608;
+  --ultra-surface:     #0a0a0c;
+  --ultra-raised:      #101014;
+  --ultra-overlay:     #161619;
+  --ultra-hover:       #1c1c20;
+
+  /* === GLASS LAYERS === */
+  --glass-1:           rgba(255, 255, 255, 0.025);
+  --glass-2:           rgba(255, 255, 255, 0.045);
+  --glass-3:           rgba(255, 255, 255, 0.07);
+  --glass-4:           rgba(255, 255, 255, 0.10);
+
+  /* === BORDERS === */
+  --border-ghost:      rgba(255, 255, 255, 0.04);
+  --border-subtle:     rgba(255, 255, 255, 0.07);
+  --border-normal:     rgba(255, 255, 255, 0.10);
+  --border-bright:     rgba(255, 255, 255, 0.16);
+
+  /* === TEXT HIERARCHY — GRAYISH TONES === */
+  --text-bright:       #e8e8ec;
+  --text-primary:      #c0c0c6;
+  --text-secondary:    #8a8a92;
+  --text-muted:        #55555e;
+  --text-ghost:        #35353d;
+
+  /* === ACCENT PALETTE — MUTED + PREMIUM === */
+  --acc-blue:          #5b9cf5;
+  --acc-blue-dim:      rgba(91, 156, 245, 0.12);
+  --acc-purple:        #a78bfa;
+  --acc-purple-dim:    rgba(167, 139, 250, 0.10);
+  --acc-cyan:          #22d3ee;
+  --acc-cyan-dim:      rgba(34, 211, 238, 0.08);
+  --acc-green:         #4ade80;
+  --acc-green-dim:     rgba(74, 222, 128, 0.08);
+  --acc-amber:         #fbbf24;
+  --acc-amber-dim:     rgba(251, 191, 36, 0.08);
+  --acc-red:           #f87171;
+  --acc-red-dim:       rgba(248, 113, 113, 0.08);
+  --acc-pink:          #f472b6;
+  --acc-teal:          #2dd4bf;
+
+  /* === GLOW EFFECTS === */
+  --glow-blue:         0 0 20px rgba(91, 156, 245, 0.15);
+  --glow-purple:       0 0 20px rgba(167, 139, 250, 0.12);
+  --glow-cyan:         0 0 20px rgba(34, 211, 238, 0.10);
+
+  /* === SHADOWS === */
+  --shadow-sm:         0 2px 8px rgba(0, 0, 0, 0.5);
+  --shadow-md:         0 8px 32px rgba(0, 0, 0, 0.6);
+  --shadow-lg:         0 16px 64px rgba(0, 0, 0, 0.8);
+  --shadow-inset:      inset 0 1px 0 rgba(255, 255, 255, 0.03);
+
+  /* === TRANSITIONS === */
+  --ease-out:          cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast:     0.12s;
+  --duration-normal:   0.2s;
+  --duration-slow:     0.35s;
+
+  /* === RADIUS === */
+  --radius-sm:         6px;
+  --radius-md:         10px;
+  --radius-lg:         14px;
+  --radius-xl:         18px;
+}
+
+
+/* ─── GLOBAL FONT ──────────────────────────────────────────── */
+body, html,
+.workspace, .app-container,
+.workspace-leaf, .workspace-leaf-content, .view-content,
+.markdown-preview-view, .markdown-rendered,
+.cm-editor, .cm-content, .cm-line,
+.nav-file-title, .nav-folder-title,
+.status-bar, .workspace-tab-header,
+.modal, .prompt, .menu, .suggestion-item,
+input, button, select, textarea {
+  font-family: 'JetBrains Mono', 'Cascadia Code', 'Fira Code', monospace !important;
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   SECTION 1 — APP CHROME & WORKSPACE
+   ════════════════════════════════════════════════════════════ */
+
+/* ─── Body & workspace root ───────────────────────────────── */
+body {
+  background: var(--ultra-void) !important;
+}
+
+.workspace-split.mod-root,
+.workspace-leaf,
+.workspace-leaf-content,
+.view-content {
+  background: var(--ultra-base) !important;
+}
+
+/* ─── Ribbon (far-left icon bar) ──────────────────────────── */
+.workspace-ribbon {
+  background: var(--ultra-void) !important;
+  border-right: 1px solid var(--border-ghost) !important;
+}
+
+.workspace-ribbon .clickable-icon {
+  color: var(--text-muted) !important;
+  border-radius: var(--radius-sm) !important;
+  transition: all var(--duration-fast) var(--ease-out) !important;
+}
+
+.workspace-ribbon .clickable-icon:hover {
+  color: var(--text-bright) !important;
+  background: var(--glass-2) !important;
+}
+
+.workspace-ribbon .clickable-icon.is-active {
+  color: var(--text-bright) !important;
+  background: var(--glass-3) !important;
+}
+
+
+/* ─── Left sidebar ────────────────────────────────────────── */
+.workspace-split.mod-left-split,
+.workspace-split.mod-left-split .workspace-leaf,
+.workspace-split.mod-left-split .workspace-leaf-content,
+.nav-files-container {
+  background: var(--ultra-void) !important;
+}
+
+.workspace-split.mod-left-split {
+  border-right: 1px solid var(--border-ghost) !important;
+}
+
+/* Right sidebar */
+.workspace-split.mod-right-split,
+.workspace-split.mod-right-split .workspace-leaf,
+.workspace-split.mod-right-split .workspace-leaf-content {
+  background: var(--ultra-void) !important;
+}
+
+.workspace-split.mod-right-split {
+  border-left: 1px solid var(--border-ghost) !important;
+}
+
+/* Vault header */
+.workspace-drawer-header,
+.nav-header {
+  background: var(--ultra-void) !important;
+  border-bottom: 1px solid var(--border-ghost) !important;
+  padding: 10px 12px !important;
+}
+
+/* Folder names */
+.nav-folder-title {
+  font-size: 10px !important;
+  font-weight: 600 !important;
+  letter-spacing: 1.4px !important;
+  text-transform: uppercase !important;
+  color: var(--text-ghost) !important;
+  padding: 6px 10px 3px !important;
+  margin-top: 8px !important;
+  background: transparent !important;
+  transition: all var(--duration-fast) var(--ease-out) !important;
+}
+
+.nav-folder-title:hover {
+  color: var(--text-secondary) !important;
+  background: var(--glass-1) !important;
+  border-radius: var(--radius-sm) !important;
+}
+
+.nav-folder-title-content {
+  font-weight: 600 !important;
+}
+
+/* File names */
+.nav-file-title {
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  color: var(--text-muted) !important;
+  padding: 4px 10px 4px 18px !important;
+  border-radius: var(--radius-sm) !important;
+  margin: 1px 4px !important;
+  transition: all var(--duration-fast) var(--ease-out) !important;
+  background: transparent !important;
+}
+
+.nav-file-title:hover {
+  color: var(--text-secondary) !important;
+  background: var(--glass-2) !important;
+}
+
+.nav-file-title.is-active,
+.nav-file-title.is-active:hover {
+  color: var(--text-bright) !important;
+  background: var(--glass-2) !important;
+  border-left: 2px solid var(--acc-blue) !important;
+  padding-left: 16px !important;
+  font-weight: 500 !important;
+}
+
+/* File extension tags */
+.nav-file-tag {
+  font-size: 9px !important;
+  color: var(--text-ghost) !important;
+  background: var(--glass-1) !important;
+  border: 1px solid var(--border-ghost) !important;
+  border-radius: 4px !important;
+  padding: 1px 5px !important;
+}
+
+/* Collapse arrow */
+.nav-folder-collapse-indicator svg {
+  color: var(--text-ghost) !important;
+  width: 10px !important;
+  height: 10px !important;
+}
+
+/* Sidebar action buttons */
+.nav-action-button {
+  color: var(--text-muted) !important;
+  border-radius: var(--radius-sm) !important;
+  padding: 4px !important;
+  transition: all var(--duration-fast) var(--ease-out) !important;
+}
+
+.nav-action-button:hover {
+  color: var(--text-bright) !important;
+  background: var(--glass-2) !important;
+}
+
+
+/* ─── Tab bar ─────────────────────────────────────────────── */
+.workspace-tab-header-container {
+  background: var(--ultra-void) !important;
+  border-bottom: 1px solid var(--border-ghost) !important;
+}
+
+.workspace-tab-header {
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  color: var(--text-muted) !important;
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 2px solid transparent !important;
+  border-radius: 0 !important;
+  padding: 8px 18px !important;
+  transition: all var(--duration-fast) var(--ease-out) !important;
+}
+
+.workspace-tab-header:hover {
+  color: var(--text-secondary) !important;
+}
+
+.workspace-tab-header.is-active {
+  color: var(--text-bright) !important;
+  border-bottom: 2px solid var(--acc-blue) !important;
+  background: transparent !important;
+}
+
+
+/* ─── Status bar ──────────────────────────────────────────── */
+.status-bar {
+  background: var(--ultra-void) !important;
+  border-top: 1px solid var(--border-ghost) !important;
+  font-size: 10.5px !important;
+  color: var(--text-ghost) !important;
+  padding: 3px 14px !important;
+}
+
+.status-bar-item {
+  color: var(--text-ghost) !important;
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   SECTION 2 — READING VIEW (Preview)
+   ════════════════════════════════════════════════════════════ */
+
+/* Kill Obsidian's internal container spacing */
+.view-content {
+  padding: 0 !important;
+}
+
+.markdown-preview-sizer {
+  padding: 0 !important;
+  margin: 0 !important;
+  min-height: unset !important;
+}
+
+.markdown-preview-section {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.markdown-preview-pusher {
+  display: none !important;
+}
+
+/* Tight top spacing for note content */
+.markdown-preview-view .markdown-preview-sizer > div:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.markdown-preview-view,
+.markdown-rendered {
+  background: var(--ultra-base) !important;
+  color: var(--text-secondary) !important;
+  font-size: 13.5px !important;
+  line-height: 1.55 !important;
+  padding: 0.4rem 1.5rem !important;
+  max-width: 860px !important;
+  margin: 0 auto !important;
+}
+
+
+/* ─── Headings ────────────────────────────────────────────── */
+.markdown-rendered h1,
+.markdown-preview-view h1 {
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  color: var(--text-bright) !important;
+  letter-spacing: -0.3px !important;
+  border-bottom: 1px solid var(--border-subtle) !important;
+  padding-bottom: 0.4rem !important;
+  margin: 1rem 0 0.4rem !important;
+  background: linear-gradient(135deg, var(--text-bright) 0%, var(--acc-blue) 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+}
+
+.markdown-rendered h2,
+.markdown-preview-view h2 {
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  color: var(--text-bright) !important;
+  margin: 0.8rem 0 0.3rem !important;
+  padding-left: 10px !important;
+  border-left: 3px solid var(--acc-blue) !important;
+}
+
+.markdown-rendered h3,
+.markdown-preview-view h3 {
+  font-size: 0.9rem !important;
+  font-weight: 600 !important;
+  color: var(--text-primary) !important;
+  margin: 0.6rem 0 0.2rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.8px !important;
+}
+
+.markdown-rendered h4,
+.markdown-preview-view h4 {
+  font-size: 0.82rem !important;
+  font-weight: 600 !important;
+  color: var(--acc-purple) !important;
+  margin: 0.5rem 0 0.2rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.8px !important;
+}
+
+.markdown-rendered h5,
+.markdown-preview-view h5 {
+  font-size: 0.8rem !important;
+  font-weight: 500 !important;
+  color: var(--text-secondary) !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+}
+
+.markdown-rendered h6,
+.markdown-preview-view h6 {
+  font-size: 0.75rem !important;
+  font-weight: 500 !important;
+  color: var(--text-muted) !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+}
+
+
+/* ─── Paragraphs & lists ──────────────────────────────────── */
+.markdown-rendered p {
+  color: var(--text-secondary) !important;
+  margin-bottom: 0.35rem !important;
+}
+
+.markdown-rendered ul,
+.markdown-rendered ol {
+  padding-left: 1.2rem !important;
+  margin-bottom: 0.35rem !important;
+  color: var(--text-secondary) !important;
+}
+
+.markdown-rendered li {
+  margin-bottom: 0.15rem !important;
+  line-height: 1.6 !important;
+}
+
+.markdown-rendered li::marker {
+  color: var(--acc-blue) !important;
+}
+
+
+/* ─── Inline code ─────────────────────────────────────────── */
+.markdown-rendered code,
+.markdown-preview-view code {
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 12.5px !important;
+  background: var(--glass-3) !important;
+  color: var(--acc-cyan) !important;
+  padding: 2px 7px !important;
+  border-radius: 5px !important;
+  border: 1px solid var(--border-subtle) !important;
+}
+
+
+/* ─── Code blocks (terminal style) ────────────────────────── */
+.markdown-rendered pre,
+.markdown-preview-view pre {
+  background: #010103 !important;
+  border: 1px solid var(--border-normal) !important;
+  border-radius: var(--radius-sm) !important;
+  padding: 0.9rem 1.1rem !important;
+  margin: 0.7rem 0 !important;
+  box-shadow: var(--shadow-inset),
+              var(--shadow-sm) !important;
+  position: relative !important;
+  overflow-x: auto !important;
+}
+
+/* Traffic-light dots */
+.markdown-rendered pre::before,
+.markdown-preview-view pre::before {
+  content: '●  ●  ●';
+  display: block;
+  font-size: 6px;
+  letter-spacing: 3px;
+  color: rgba(255, 255, 255, 0.08);
+  margin-bottom: 8px;
+}
+
+.markdown-rendered pre code,
+.markdown-preview-view pre code {
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 12.5px !important;
+  line-height: 1.7 !important;
+  color: #c5cbd3 !important;
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   SYNTAX HIGHLIGHTING — Reading View (Prism.js tokens)
+   ════════════════════════════════════════════════════════════ */
+
+/* ─── Base token colors ───────────────────────────────────── */
+.markdown-rendered pre code .token.comment,
+.markdown-rendered pre code .token.prolog,
+.markdown-rendered pre code .token.doctype,
+.markdown-rendered pre code .token.cdata {
+  color: #545c6a !important;
+  font-style: italic !important;
+}
+
+.markdown-rendered pre code .token.keyword,
+.markdown-rendered pre code .token.tag,
+.markdown-rendered pre code .token.important {
+  color: #ff7b72 !important;
+  font-weight: 500 !important;
+}
+
+.markdown-rendered pre code .token.string,
+.markdown-rendered pre code .token.attr-value,
+.markdown-rendered pre code .token.template-string {
+  color: #a5d6ff !important;
+}
+
+.markdown-rendered pre code .token.function,
+.markdown-rendered pre code .token.method {
+  color: #d2a8ff !important;
+}
+
+.markdown-rendered pre code .token.number,
+.markdown-rendered pre code .token.boolean,
+.markdown-rendered pre code .token.constant {
+  color: #79c0ff !important;
+}
+
+.markdown-rendered pre code .token.variable,
+.markdown-rendered pre code .token.symbol {
+  color: #ffa657 !important;
+}
+
+.markdown-rendered pre code .token.operator,
+.markdown-rendered pre code .token.punctuation {
+  color: #8b949e !important;
+}
+
+.markdown-rendered pre code .token.property,
+.markdown-rendered pre code .token.attr-name {
+  color: #7ee787 !important;
+}
+
+.markdown-rendered pre code .token.class-name,
+.markdown-rendered pre code .token.builtin {
+  color: #ffa657 !important;
+  font-weight: 500 !important;
+}
+
+.markdown-rendered pre code .token.selector,
+.markdown-rendered pre code .token.char {
+  color: #7ee787 !important;
+}
+
+.markdown-rendered pre code .token.regex {
+  color: #a5d6ff !important;
+}
+
+.markdown-rendered pre code .token.url {
+  color: #a5d6ff !important;
+  text-decoration: underline !important;
+}
+
+.markdown-rendered pre code .token.deleted {
+  color: #ffa198 !important;
+  background: rgba(248, 81, 73, 0.1) !important;
+}
+
+.markdown-rendered pre code .token.inserted {
+  color: #7ee787 !important;
+  background: rgba(63, 185, 80, 0.1) !important;
+}
+
+.markdown-rendered pre code .token.namespace {
+  color: #ffa657 !important;
+  opacity: 0.7 !important;
+}
+
+.markdown-rendered pre code .token.decorator,
+.markdown-rendered pre code .token.annotation {
+  color: #d2a8ff !important;
+}
+
+
+/* ─── Language badge on code blocks ───────────────────────── */
+
+/* Python */
+pre[class*="language-python"]::after,
+code[class*="language-python"]::after {
+  content: 'PYTHON' !important;
+}
+pre[class*="language-python"],
+pre[class*="language-py"] {
+  border-top: 2px solid #3776ab !important;
+}
+pre[class*="language-py"]::after,
+code[class*="language-py"]::after {
+  content: 'PYTHON' !important;
+}
+
+/* JavaScript */
+pre[class*="language-javascript"]::after,
+code[class*="language-javascript"]::after,
+pre[class*="language-js"]::after,
+code[class*="language-js"]::after {
+  content: 'JAVASCRIPT' !important;
+}
+pre[class*="language-javascript"],
+pre[class*="language-js"] {
+  border-top: 2px solid #f7df1e !important;
+}
+
+/* TypeScript */
+pre[class*="language-typescript"]::after,
+code[class*="language-typescript"]::after,
+pre[class*="language-ts"]::after,
+code[class*="language-ts"]::after {
+  content: 'TYPESCRIPT' !important;
+}
+pre[class*="language-typescript"],
+pre[class*="language-ts"] {
+  border-top: 2px solid #3178c6 !important;
+}
+
+/* Java */
+pre[class*="language-java"]::after,
+code[class*="language-java"]::after {
+  content: 'JAVA' !important;
+}
+pre[class*="language-java"]:not([class*="javascript"]) {
+  border-top: 2px solid #ed8b00 !important;
+}
+
+/* YAML */
+pre[class*="language-yaml"]::after,
+code[class*="language-yaml"]::after,
+pre[class*="language-yml"]::after,
+code[class*="language-yml"]::after {
+  content: 'YAML' !important;
+}
+pre[class*="language-yaml"],
+pre[class*="language-yml"] {
+  border-top: 2px solid #cb171e !important;
+}
+
+/* CSS */
+pre[class*="language-css"]::after,
+code[class*="language-css"]::after {
+  content: 'CSS' !important;
+}
+pre[class*="language-css"] {
+  border-top: 2px solid #1572b6 !important;
+}
+
+/* HTML */
+pre[class*="language-html"]::after,
+code[class*="language-html"]::after {
+  content: 'HTML' !important;
+}
+pre[class*="language-html"] {
+  border-top: 2px solid #e34c26 !important;
+}
+
+/* JSON */
+pre[class*="language-json"]::after,
+code[class*="language-json"]::after {
+  content: 'JSON' !important;
+}
+pre[class*="language-json"] {
+  border-top: 2px solid #8bc34a !important;
+}
+
+/* SQL */
+pre[class*="language-sql"]::after,
+code[class*="language-sql"]::after {
+  content: 'SQL' !important;
+}
+pre[class*="language-sql"] {
+  border-top: 2px solid #00758f !important;
+}
+
+/* Bash / Shell */
+pre[class*="language-bash"]::after,
+code[class*="language-bash"]::after,
+pre[class*="language-shell"]::after,
+code[class*="language-shell"]::after,
+pre[class*="language-sh"]::after,
+code[class*="language-sh"]::after {
+  content: 'SHELL' !important;
+}
+pre[class*="language-bash"],
+pre[class*="language-shell"],
+pre[class*="language-sh"] {
+  border-top: 2px solid #4eaa25 !important;
+}
+
+/* Rust */
+pre[class*="language-rust"]::after,
+code[class*="language-rust"]::after,
+pre[class*="language-rs"]::after,
+code[class*="language-rs"]::after {
+  content: 'RUST' !important;
+}
+pre[class*="language-rust"],
+pre[class*="language-rs"] {
+  border-top: 2px solid #ce412b !important;
+}
+
+/* Go */
+pre[class*="language-go"]::after,
+code[class*="language-go"]::after {
+  content: 'GO' !important;
+}
+pre[class*="language-go"] {
+  border-top: 2px solid #00add8 !important;
+}
+
+/* C / C++ */
+pre[class*="language-c"]::after,
+code[class*="language-c"]::after {
+  content: 'C' !important;
+}
+pre[class*="language-cpp"]::after,
+code[class*="language-cpp"]::after {
+  content: 'C++' !important;
+}
+pre[class*="language-c"],
+pre[class*="language-cpp"] {
+  border-top: 2px solid #00599c !important;
+}
+
+/* Dockerfile */
+pre[class*="language-docker"]::after,
+code[class*="language-docker"]::after,
+pre[class*="language-dockerfile"]::after,
+code[class*="language-dockerfile"]::after {
+  content: 'DOCKER' !important;
+}
+pre[class*="language-docker"],
+pre[class*="language-dockerfile"] {
+  border-top: 2px solid #2496ed !important;
+}
+
+/* Terraform / HCL */
+pre[class*="language-hcl"]::after,
+code[class*="language-hcl"]::after,
+pre[class*="language-terraform"]::after,
+code[class*="language-terraform"]::after,
+pre[class*="language-tf"]::after,
+code[class*="language-tf"]::after {
+  content: 'TERRAFORM' !important;
+}
+pre[class*="language-hcl"],
+pre[class*="language-terraform"],
+pre[class*="language-tf"] {
+  border-top: 2px solid #7b42bc !important;
+}
+
+/* Markdown */
+pre[class*="language-markdown"]::after,
+code[class*="language-markdown"]::after,
+pre[class*="language-md"]::after,
+code[class*="language-md"]::after {
+  content: 'MARKDOWN' !important;
+}
+pre[class*="language-markdown"],
+pre[class*="language-md"] {
+  border-top: 2px solid #83b7cf !important;
+}
+
+/* GraphQL */
+pre[class*="language-graphql"]::after,
+code[class*="language-graphql"]::after {
+  content: 'GRAPHQL' !important;
+}
+pre[class*="language-graphql"] {
+  border-top: 2px solid #e535ab !important;
+}
+
+/* TOML */
+pre[class*="language-toml"]::after,
+code[class*="language-toml"]::after {
+  content: 'TOML' !important;
+}
+pre[class*="language-toml"] {
+  border-top: 2px solid #9c4121 !important;
+}
+
+/* R / Data Science */
+pre[class*="language-r"]::after,
+code[class*="language-r"]::after {
+  content: 'R' !important;
+}
+pre[class*="language-r"]:not([class*="rust"]) {
+  border-top: 2px solid #276dc3 !important;
+}
+
+/* Language badge styling (shared) */
+pre[class*="language-"]::after {
+  position: absolute !important;
+  top: 6px !important;
+  right: 10px !important;
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 9px !important;
+  font-weight: 600 !important;
+  letter-spacing: 1.5px !important;
+  color: var(--text-ghost) !important;
+  background: var(--glass-2) !important;
+  padding: 2px 8px !important;
+  border-radius: 4px !important;
+  border: 1px solid var(--border-ghost) !important;
+  pointer-events: none !important;
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   SYNTAX HIGHLIGHTING — Live Editor (CodeMirror tokens)
+   ════════════════════════════════════════════════════════════ */
+
+/* Comments */
+.cm-comment {
+  color: #545c6a !important;
+  font-style: italic !important;
+}
+
+/* Keywords (if, else, for, while, return, class, def, etc.) */
+.cm-keyword {
+  color: #ff7b72 !important;
+  font-weight: 500 !important;
+}
+
+/* Strings */
+.cm-string, .cm-string-2 {
+  color: #a5d6ff !important;
+}
+
+/* Numbers */
+.cm-number {
+  color: #79c0ff !important;
+}
+
+/* Functions / method calls */
+.cm-def, .cm-callee {
+  color: #d2a8ff !important;
+}
+
+/* Variables */
+.cm-variable, .cm-variable-2, .cm-variable-3 {
+  color: #c5cbd3 !important;
+}
+
+/* Properties */
+.cm-property {
+  color: #7ee787 !important;
+}
+
+/* Operators */
+.cm-operator {
+  color: #8b949e !important;
+}
+
+/* Types / builtins */
+.cm-type, .cm-builtin {
+  color: #ffa657 !important;
+  font-weight: 500 !important;
+}
+
+/* Tags (HTML/XML) */
+.cm-tag {
+  color: #7ee787 !important;
+}
+
+/* Attributes */
+.cm-attribute {
+  color: #79c0ff !important;
+}
+
+/* Meta (decorators, annotations) */
+.cm-meta {
+  color: #d2a8ff !important;
+}
+
+/* Atom (true, false, null, None) */
+.cm-atom {
+  color: #79c0ff !important;
+}
+
+/* Brackets/Punctuation */
+.cm-bracket {
+  color: #8b949e !important;
+}
+
+/* Qualifier */
+.cm-qualifier {
+  color: #ffa657 !important;
+}
+
+/* Error */
+.cm-error {
+  color: #f85149 !important;
+  text-decoration: wavy underline !important;
+  text-decoration-color: rgba(248, 81, 73, 0.4) !important;
+}
+.markdown-rendered blockquote,
+.markdown-preview-view blockquote {
+  background: var(--glass-1) !important;
+  border: 1px solid var(--border-ghost) !important;
+  border-left: 3px solid var(--acc-blue) !important;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0 !important;
+  padding: 8px 12px !important;
+  margin: 0.5rem 0 !important;
+  color: var(--text-secondary) !important;
+  font-style: italic !important;
+}
+
+.markdown-rendered blockquote p {
+  margin: 0 !important;
+}
+
+
+/* ─── Links ───────────────────────────────────────────────── */
+.markdown-rendered a,
+.markdown-preview-view a {
+  color: var(--acc-blue) !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid rgba(91, 156, 245, 0.25) !important;
+  transition: all var(--duration-fast) var(--ease-out) !important;
+}
+
+.markdown-rendered a:hover,
+.markdown-preview-view a:hover {
+  color: var(--text-bright) !important;
+  border-color: var(--acc-blue) !important;
+  text-shadow: var(--glow-blue) !important;
+}
+
+
+/* ─── Images ──────────────────────────────────────────────── */
+.markdown-rendered img,
+.markdown-preview-view img {
+  border-radius: var(--radius-sm) !important;
+  border: 1px solid var(--border-subtle) !important;
+  box-shadow: var(--shadow-md) !important;
+  display: block !important;
+  margin: 0.6rem auto !important;
+  max-width: 100% !important;
+  transition: box-shadow var(--duration-normal) var(--ease-out) !important;
+}
+
+.markdown-rendered img:hover,
+.markdown-preview-view img:hover {
+  box-shadow: var(--shadow-md), var(--glow-blue) !important;
+}
+
+
+/* ─── Horizontal rule ─────────────────────────────────────── */
+.markdown-rendered hr,
+.markdown-preview-view hr {
+  border: none !important;
+  height: 1px !important;
+  background: linear-gradient(90deg, transparent, var(--border-bright), transparent) !important;
+  margin: 1.2rem 0 !important;
+}
+
+
+/* ─── Tags ────────────────────────────────────────────────── */
+.tag {
+  font-family: 'JetBrains Mono', monospace !important;
+  background: var(--glass-2) !important;
+  color: var(--text-secondary) !important;
+  border: 1px solid var(--border-subtle) !important;
+  border-radius: 20px !important;
+  padding: 2px 10px !important;
+  font-size: 11px !important;
+  font-weight: 400 !important;
+  text-decoration: none !important;
+  transition: all var(--duration-fast) var(--ease-out) !important;
+}
+
+.tag:hover {
+  color: var(--text-bright) !important;
+  background: var(--glass-3) !important;
+  border-color: var(--border-normal) !important;
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   SECTION 3 — CALLOUT BOXES (Glass Cards)
+   ════════════════════════════════════════════════════════════ */
+
+.callout {
+  background: var(--ultra-raised) !important;
+  border: 1px solid var(--border-normal) !important;
+  border-radius: var(--radius-sm) !important;
+  margin: 0.6rem 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  box-shadow: var(--shadow-sm) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+}
+
+.callout-title {
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.5px !important;
+  padding: 7px 12px !important;
+  border-bottom: 1px solid var(--border-ghost) !important;
+  background: var(--glass-2) !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+}
+
+.callout-content {
+  font-size: 12.5px !important;
+  color: var(--text-secondary) !important;
+  padding: 8px 12px !important;
+  line-height: 1.6 !important;
+}
+
+/* Callout variants — left accent border + title color */
+.callout[data-callout="info"] {
+  border-left: 3px solid var(--acc-blue) !important;
+}
+.callout[data-callout="info"] .callout-title {
+  color: var(--acc-blue) !important;
+}
+
+.callout[data-callout="note"] {
+  border-left: 3px solid var(--text-muted) !important;
+}
+.callout[data-callout="note"] .callout-title {
+  color: var(--text-primary) !important;
+}
+
+.callout[data-callout="success"],
+.callout[data-callout="check"],
+.callout[data-callout="done"] {
+  border-left: 3px solid var(--acc-green) !important;
+}
+.callout[data-callout="success"] .callout-title,
+.callout[data-callout="check"] .callout-title,
+.callout[data-callout="done"] .callout-title {
+  color: var(--acc-green) !important;
+}
+
+.callout[data-callout="warning"],
+.callout[data-callout="caution"],
+.callout[data-callout="attention"] {
+  border-left: 3px solid var(--acc-amber) !important;
+}
+.callout[data-callout="warning"] .callout-title,
+.callout[data-callout="caution"] .callout-title,
+.callout[data-callout="attention"] .callout-title {
+  color: var(--acc-amber) !important;
+}
+
+.callout[data-callout="danger"],
+.callout[data-callout="error"],
+.callout[data-callout="bug"] {
+  border-left: 3px solid var(--acc-red) !important;
+}
+.callout[data-callout="danger"] .callout-title,
+.callout[data-callout="error"] .callout-title,
+.callout[data-callout="bug"] .callout-title {
+  color: var(--acc-red) !important;
+}
+
+.callout[data-callout="tip"],
+.callout[data-callout="hint"],
+.callout[data-callout="important"] {
+  border-left: 3px solid var(--acc-purple) !important;
+}
+.callout[data-callout="tip"] .callout-title,
+.callout[data-callout="hint"] .callout-title,
+.callout[data-callout="important"] .callout-title {
+  color: var(--acc-purple) !important;
+}
+
+.callout[data-callout="example"],
+.callout[data-callout="abstract"],
+.callout[data-callout="summary"] {
+  border-left: 3px solid var(--acc-cyan) !important;
+}
+.callout[data-callout="example"] .callout-title,
+.callout[data-callout="abstract"] .callout-title,
+.callout[data-callout="summary"] .callout-title {
+  color: var(--acc-cyan) !important;
+}
+
+.callout[data-callout="quote"],
+.callout[data-callout="cite"] {
+  border-left: 3px solid var(--text-muted) !important;
+  font-style: italic !important;
+}
+
+.callout-fold {
+  color: inherit !important;
+  opacity: 0.5 !important;
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   SECTION 4 — TABLES
+   ════════════════════════════════════════════════════════════ */
+
+.markdown-rendered table,
+.markdown-preview-view table {
+  width: 100% !important;
+  border-collapse: collapse !important;
+  font-size: 12px !important;
+  margin: 0.6rem 0 !important;
+  border: 1px solid var(--border-normal) !important;
+  border-radius: var(--radius-sm) !important;
+  overflow: hidden !important;
+  background: var(--ultra-surface) !important;
+}
+
+.markdown-rendered thead th,
+.markdown-preview-view thead th {
+  background: var(--glass-2) !important;
+  color: var(--text-muted) !important;
+  font-size: 10px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  padding: 7px 12px !important;
+  text-align: left !important;
+  border-bottom: 1px solid var(--border-normal) !important;
+}
+
+.markdown-rendered tbody tr,
+.markdown-preview-view tbody tr {
+  border-bottom: 1px solid var(--border-ghost) !important;
+  transition: background var(--duration-fast) var(--ease-out) !important;
+}
+
+.markdown-rendered tbody tr:last-child,
+.markdown-preview-view tbody tr:last-child {
+  border-bottom: none !important;
+}
+
+/* Alternating row stripe */
+.markdown-rendered tbody tr:nth-child(even),
+.markdown-preview-view tbody tr:nth-child(even) {
+  background: var(--glass-1) !important;
+}
+
+.markdown-rendered tbody tr:hover,
+.markdown-preview-view tbody tr:hover {
+  background: var(--glass-3) !important;
+}
+
+.markdown-rendered tbody td,
+.markdown-preview-view tbody td {
+  padding: 6px 12px !important;
+  color: var(--text-secondary) !important;
+  vertical-align: top !important;
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   SECTION 5 — TASKS / CHECKBOXES
+   ════════════════════════════════════════════════════════════ */
+
+.markdown-rendered .task-list-item-checkbox {
+  border-radius: 4px !important;
+  border: 1.5px solid var(--border-bright) !important;
+  width: 16px !important;
+  height: 16px !important;
+  cursor: pointer !important;
+  transition: all var(--duration-fast) var(--ease-out) !important;
+}
+
+.markdown-rendered .task-list-item-checkbox:checked {
+  background: var(--acc-green) !important;
+  border-color: var(--acc-green) !important;
+}
+
+.markdown-rendered li.task-list-item[data-task="x"] {
+  color: var(--text-ghost) !important;
+  text-decoration: line-through !important;
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   SECTION 6 — LIVE EDITOR (Source / Live Preview)
+   ════════════════════════════════════════════════════════════ */
+
+.cm-editor {
+  background: var(--ultra-base) !important;
+}
+
+.cm-scroller {
+  background: var(--ultra-base) !important;
+}
+
+.cm-content {
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 13.5px !important;
+  line-height: 1.55 !important;
+  color: var(--text-secondary) !important;
+  caret-color: var(--acc-blue) !important;
+  padding: 0.4rem 1.5rem !important;
+  max-width: 860px !important;
+  margin: 0 auto !important;
+}
+
+/* Editor headings */
+.cm-header-1 {
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  color: var(--text-bright) !important;
+}
+
+.cm-header-2 {
+  font-size: 1.05rem !important;
+  font-weight: 600 !important;
+  color: var(--text-bright) !important;
+}
+
+.cm-header-3 {
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+  color: var(--text-primary) !important;
+}
+
+.cm-header-4 {
+  font-size: 0.85rem !important;
+  font-weight: 600 !important;
+  color: var(--acc-purple) !important;
+}
+
+/* Editor inline code */
+.cm-inline-code {
+  font-family: 'JetBrains Mono', monospace !important;
+  background: var(--glass-3) !important;
+  color: var(--acc-cyan) !important;
+  padding: 1px 6px !important;
+  border-radius: 4px !important;
+  border: 1px solid var(--border-subtle) !important;
+}
+
+/* Active line highlight */
+.cm-activeLine {
+  background: rgba(255, 255, 255, 0.015) !important;
+  border-radius: 4px !important;
+}
+
+/* Cursor */
+.cm-cursor {
+  border-left-color: var(--acc-blue) !important;
+  border-left-width: 2px !important;
+}
+
+/* Selection */
+::selection {
+  background: rgba(91, 156, 245, 0.18) !important;
+  color: var(--text-bright) !important;
+}
+
+/* Fold indicator */
+.cm-fold-widget {
+  color: var(--acc-blue) !important;
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   SECTION 7 — SEARCH & HIGHLIGHTS
+   ════════════════════════════════════════════════════════════ */
+
+.search-result-file-matched-text,
+mark {
+  background: rgba(251, 191, 36, 0.2) !important;
+  color: var(--acc-amber) !important;
+  border-radius: 3px !important;
+  padding: 0 2px !important;
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   SECTION 8 — FRONTMATTER
+   ════════════════════════════════════════════════════════════ */
+
+.frontmatter-container {
+  background: var(--ultra-surface) !important;
+  border: 1px solid var(--border-ghost) !important;
+  border-radius: var(--radius-sm) !important;
+  font-size: 12px !important;
+  color: var(--text-ghost) !important;
+  padding: 0.75rem 1rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   SECTION 9 — COMMAND PALETTE & MODALS
+   ════════════════════════════════════════════════════════════ */
+
+.prompt {
+  background: rgba(6, 6, 8, 0.97) !important;
+  border: 1px solid var(--border-normal) !important;
+  border-radius: var(--radius-lg) !important;
+  box-shadow: var(--shadow-lg) !important;
+  backdrop-filter: blur(24px) !important;
+  -webkit-backdrop-filter: blur(24px) !important;
+}
+
+.prompt-input-container input,
+.prompt-input {
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 14px !important;
+  background: var(--glass-2) !important;
+  border: 1px solid var(--border-normal) !important;
+  border-radius: var(--radius-sm) !important;
+  color: var(--text-bright) !important;
+  padding: 10px 14px !important;
+}
+
+.suggestion-item {
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 12.5px !important;
+  color: var(--text-secondary) !important;
+  border-radius: var(--radius-sm) !important;
+  padding: 8px 12px !important;
+  transition: all var(--duration-fast) var(--ease-out) !important;
+}
+
+.suggestion-item.is-selected {
+  background: var(--acc-blue-dim) !important;
+  color: var(--acc-blue) !important;
+}
+
+/* Modal */
+.modal-container .modal,
+.modal {
+  background: rgba(6, 6, 8, 0.97) !important;
+  border: 1px solid var(--border-normal) !important;
+  border-radius: var(--radius-lg) !important;
+  box-shadow: var(--shadow-lg) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   SECTION 10 — CANVAS (Premium Node Styling)
+   ════════════════════════════════════════════════════════════ */
+
+/* Canvas background */
+.canvas-wrapper {
+  background: var(--ultra-void) !important;
+}
+
+/* Canvas card nodes */
+.canvas-node {
+  background: var(--ultra-raised) !important;
+  border: 1px solid var(--border-normal) !important;
+  border-radius: var(--radius-md) !important;
+  box-shadow: var(--shadow-md) !important;
+  transition: all var(--duration-normal) var(--ease-out) !important;
+}
+
+.canvas-node:hover {
+  border-color: var(--border-bright) !important;
+  box-shadow: var(--shadow-md), var(--glow-blue) !important;
+  transform: translateY(-1px) !important;
+}
+
+.canvas-node.is-focused {
+  border-color: var(--acc-blue) !important;
+  box-shadow: 0 0 0 2px var(--acc-blue-dim), var(--shadow-md) !important;
+}
+
+.canvas-node-content {
+  background: transparent !important;
+}
+
+.canvas-node-label {
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 13px !important;
+  color: var(--text-primary) !important;
+}
+
+/* Canvas colored nodes */
+.canvas-node[data-color="1"] {
+  border-color: var(--acc-red) !important;
+  box-shadow: 0 0 16px rgba(248, 113, 113, 0.08) !important;
+}
+
+.canvas-node[data-color="2"] {
+  border-color: var(--acc-amber) !important;
+  box-shadow: 0 0 16px rgba(251, 191, 36, 0.08) !important;
+}
+
+.canvas-node[data-color="3"] {
+  border-color: var(--acc-green) !important;
+  box-shadow: 0 0 16px rgba(74, 222, 128, 0.08) !important;
+}
+
+.canvas-node[data-color="4"] {
+  border-color: var(--acc-cyan) !important;
+  box-shadow: 0 0 16px rgba(34, 211, 238, 0.08) !important;
+}
+
+.canvas-node[data-color="5"] {
+  border-color: var(--acc-purple) !important;
+  box-shadow: 0 0 16px rgba(167, 139, 250, 0.08) !important;
+}
+
+.canvas-node[data-color="6"] {
+  border-color: var(--acc-blue) !important;
+  box-shadow: 0 0 16px rgba(91, 156, 245, 0.08) !important;
+}
+
+/* Canvas edges / connections */
+.canvas-edge {
+  stroke: var(--border-bright) !important;
+  stroke-width: 1.5px !important;
+}
+
+.canvas-edge.is-focused {
+  stroke: var(--acc-blue) !important;
+  stroke-width: 2px !important;
+  filter: drop-shadow(0 0 6px rgba(91, 156, 245, 0.3)) !important;
+}
+
+/* Canvas selection area */
+.canvas-selection {
+  background: var(--acc-blue-dim) !important;
+  border: 1px solid var(--acc-blue) !important;
+}
+
+/* Canvas group */
+.canvas-node-group {
+  background: var(--glass-1) !important;
+  border: 1px dashed var(--border-subtle) !important;
+  border-radius: var(--radius-lg) !important;
+}
+
+.canvas-node-group .canvas-node-label {
+  color: var(--text-muted) !important;
+  font-size: 11px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+}
+
+/* Canvas controls */
+.canvas-controls {
+  background: var(--ultra-raised) !important;
+  border: 1px solid var(--border-subtle) !important;
+  border-radius: var(--radius-md) !important;
+  box-shadow: var(--shadow-md) !important;
+}
+
+.canvas-controls .clickable-icon {
+  color: var(--text-secondary) !important;
+  transition: all var(--duration-fast) var(--ease-out) !important;
+}
+
+.canvas-controls .clickable-icon:hover {
+  color: var(--text-bright) !important;
+  background: var(--glass-2) !important;
+}
+
+/* Canvas node resize handle */
+.canvas-node-resize-handle {
+  background: var(--acc-blue) !important;
+  border: none !important;
+  border-radius: 50% !important;
+  width: 8px !important;
+  height: 8px !important;
+  opacity: 0 !important;
+  transition: opacity var(--duration-fast) var(--ease-out) !important;
+}
+
+.canvas-node:hover .canvas-node-resize-handle {
+  opacity: 1 !important;
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   SECTION 11 — GRAPH VIEW
+   ════════════════════════════════════════════════════════════ */
+
+.graph-view.color-fill {
+  color: var(--acc-blue) !important;
+}
+
+.graph-view.color-fill-highlight {
+  color: var(--acc-purple) !important;
+}
+
+.graph-view.color-fill-tag {
+  color: var(--acc-teal) !important;
+}
+
+.graph-view.color-fill-attachment {
+  color: var(--acc-amber) !important;
+}
+
+.graph-view.color-fill-unresolved {
+  color: var(--text-ghost) !important;
+}
+
+.graph-view.color-fill-focused {
+  color: var(--text-bright) !important;
+}
+
+.graph-view.color-arrow {
+  color: var(--border-normal) !important;
+}
+
+.graph-view.color-line {
+  color: var(--border-ghost) !important;
+}
+
+.graph-view.color-line-highlight {
+  color: var(--acc-blue) !important;
+}
+
+.graph-view.color-text {
+  color: var(--text-secondary) !important;
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   SECTION 12 — DATAVIEW PLUGIN
+   ════════════════════════════════════════════════════════════ */
+
+.dataview.table-view-table {
+  font-family: 'JetBrains Mono', monospace !important;
+  width: 100% !important;
+  border-collapse: collapse !important;
+  font-size: 12px !important;
+  border: 1px solid var(--border-normal) !important;
+  border-radius: var(--radius-md) !important;
+  overflow: hidden !important;
+}
+
+.dataview.table-view-table thead th {
+  background: var(--glass-2) !important;
+  font-size: 9.5px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.2px !important;
+  color: var(--text-muted) !important;
+  padding: 10px 14px !important;
+  border-bottom: 1px solid var(--border-normal) !important;
+}
+
+.dataview.table-view-table tbody td {
+  padding: 8px 14px !important;
+  border-bottom: 1px solid var(--border-ghost) !important;
+  color: var(--text-secondary) !important;
+}
+
+.dataview.table-view-table tbody tr:hover td {
+  background: var(--glass-2) !important;
+  color: var(--text-primary) !important;
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   SECTION 13 — SCROLLBAR
+   ════════════════════════════════════════════════════════════ */
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   SECTION 14 — CONTEXT MENU & TOOLTIPS
+   ════════════════════════════════════════════════════════════ */
+
+.menu {
+  background: var(--ultra-raised) !important;
+  border: 1px solid var(--border-normal) !important;
+  border-radius: var(--radius-sm) !important;
+  box-shadow: var(--shadow-md) !important;
+  padding: 4px !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+}
+
+.menu-item {
+  font-size: 12px !important;
+  color: var(--text-secondary) !important;
+  border-radius: var(--radius-sm) !important;
+  padding: 6px 12px !important;
+  transition: all var(--duration-fast) var(--ease-out) !important;
+}
+
+.menu-item:hover {
+  background: var(--glass-3) !important;
+  color: var(--text-bright) !important;
+}
+
+.menu-separator {
+  background: var(--border-ghost) !important;
+}
+
+/* Tooltip */
+.tooltip {
+  background: var(--ultra-overlay) !important;
+  border: 1px solid var(--border-subtle) !important;
+  border-radius: var(--radius-sm) !important;
+  color: var(--text-primary) !important;
+  font-size: 11px !important;
+  box-shadow: var(--shadow-md) !important;
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   SECTION 15 — SETTINGS PANEL
+   ════════════════════════════════════════════════════════════ */
+
+.modal-container .vertical-tab-header {
+  background: var(--ultra-void) !important;
+  border-right: 1px solid var(--border-ghost) !important;
+}
+
+.vertical-tab-nav-item {
+  color: var(--text-muted) !important;
+  border-radius: var(--radius-sm) !important;
+  transition: all var(--duration-fast) var(--ease-out) !important;
+}
+
+.vertical-tab-nav-item:hover {
+  color: var(--text-primary) !important;
+  background: var(--glass-2) !important;
+}
+
+.vertical-tab-nav-item.is-active {
+  color: var(--text-bright) !important;
+  background: var(--glass-3) !important;
+}
+
+.vertical-tab-content {
+  background: var(--ultra-base) !important;
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   SECTION 16 — EMBED / TRANSCLUSION
+   ════════════════════════════════════════════════════════════ */
+
+.markdown-embed {
+  background: var(--ultra-surface) !important;
+  border: 1px solid var(--border-subtle) !important;
+  border-radius: var(--radius-md) !important;
+  padding: 12px 16px !important;
+  margin: 0.8rem 0 !important;
+}
+
+.markdown-embed-title {
+  font-size: 11px !important;
+  color: var(--text-muted) !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.8px !important;
+  border-bottom: 1px solid var(--border-ghost) !important;
+  padding-bottom: 6px !important;
+  margin-bottom: 8px !important;
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   SECTION 17 — MERMAID DIAGRAMS
+   ════════════════════════════════════════════════════════════ */
+
+.mermaid {
+  background: var(--ultra-surface) !important;
+  border-radius: var(--radius-md) !important;
+  padding: 1rem !important;
+  border: 1px solid var(--border-subtle) !important;
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   SECTION 18 — PRINT STYLES
+   ════════════════════════════════════════════════════════════ */
+
+@media print {
+  .workspace-ribbon,
+  .workspace-tabs,
+  .status-bar { display: none !important; }
+
+  .markdown-rendered,
+  .markdown-preview-view {
+    max-width: 100% !important;
+    padding: 1rem !important;
+    color: #222 !important;
+    background: #fff !important;
+  }
+}

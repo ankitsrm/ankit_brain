@@ -93,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 239.5
   },
   "right": {
     "id": "c063622562b20c47",
@@ -200,7 +200,7 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "fa1ad16743b57413",
+  "active": "3e46d53a8cc3d59f",
   "lastOpenFiles": [
     "Ankit_running.md",
     "LangGraph/ParallelWorkflow/Parallel Workflow.md",

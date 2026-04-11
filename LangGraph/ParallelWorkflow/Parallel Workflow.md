@@ -47,3 +47,12 @@ All 3 nodes:
 > [!success] SUCCESS — Last Run
 > avg_score: 7.4 / 10  ·  latency: 1.2s  ·  tokens: 3,840
 
+
+```Python
+print("hellow
+if a in 10: 
+	print(sd)
+```
+
+
+
