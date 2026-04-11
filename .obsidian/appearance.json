@@ -2,8 +2,8 @@
   "enabledCssSnippets": [
     "ankit-obsidian-ultra"
   ],
-  "interfaceFontFamily": "JetBrains Mono",
-  "textFontFamily": "JetBrains Mono NL",
+  "interfaceFontFamily": "Arial",
+  "textFontFamily": "JetBrains Mono",
   "monospaceFontFamily": "JetBrains Mono",
   "theme": "obsidian",
   "cssTheme": "Minimal"

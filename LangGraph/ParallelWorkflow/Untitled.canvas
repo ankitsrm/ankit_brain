@@ -33,6 +33,16 @@
 			"width":740,
 			"height":260,
 			"color":"4"
+		},
+		{
+			"id":"6add5bbf82899dc1",
+			"type":"text",
+			"text":"Trying to rescue and not working as excepted running in system",
+			"styleAttributes":{},
+			"x":-4060,
+			"y":-1220,
+			"width":260,
+			"height":140
 		}
 	],
 	"edges":[
@@ -56,6 +66,15 @@
 			"toNode":"8001a982c8f12480",
 			"toSide":"left",
 			"color":"4"
+		},
+		{
+			"id":"e1d1dc2bc28e3701",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"6add5bbf82899dc1",
+			"fromSide":"right",
+			"toNode":"0840994079a499de",
+			"toSide":"left"
 		}
 	],
 	"metadata":{

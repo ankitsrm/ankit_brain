@@ -181,13 +181,25 @@
               "icon": "lucide-list",
               "title": "Outline of Ankit_running"
             }
+          },
+          {
+            "id": "69ed77170f061409",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "LangGraph/ParallelWorkflow/Parallel Workflow.md"
+              },
+              "icon": "lucide-info",
+              "title": "File properties for Parallel Workflow"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -204,9 +216,9 @@
   },
   "active": "516a266c08488810",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2026-04-11 16.11.19.excalidraw.md",
     "LangGraph/ParallelWorkflow/Untitled.canvas",
     "LangGraph/ParallelWorkflow/Parallel Workflow.md",
-    "Excalidraw/Drawing 2026-04-11 16.11.19.excalidraw.md",
     "Ankit_running.md",
     "image.md",
     "upscaiagent1.png",

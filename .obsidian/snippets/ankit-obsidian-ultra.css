@@ -10,83 +10,102 @@
 /* ─── DESIGN TOKENS ────────────────────────────────────────── */
 :root {
   /* === BACKGROUNDS — DEEP DARK === */
-  --ultra-void:        #08080a;
-  --ultra-base:        #0c0c0f;
-  --ultra-surface:     #111114;
-  --ultra-raised:      #15151a;
-  --ultra-overlay:     #1a1a20;
-  --ultra-hover:       #202026;
+  --ultra-void: #08080a;
+  --ultra-base: #0c0c0f;
+  --ultra-surface: #111114;
+  --ultra-raised: #15151a;
+  --ultra-overlay: #1a1a20;
+  --ultra-hover: #202026;
 
   /* === GLASS LAYERS === */
-  --glass-1:           rgba(255, 255, 255, 0.025);
-  --glass-2:           rgba(255, 255, 255, 0.045);
-  --glass-3:           rgba(255, 255, 255, 0.07);
-  --glass-4:           rgba(255, 255, 255, 0.10);
+  --glass-1: rgba(255, 255, 255, 0.025);
+  --glass-2: rgba(255, 255, 255, 0.045);
+  --glass-3: rgba(255, 255, 255, 0.07);
+  --glass-4: rgba(255, 255, 255, 0.10);
 
   /* === BORDERS === */
-  --border-ghost:      rgba(255, 255, 255, 0.04);
-  --border-subtle:     rgba(255, 255, 255, 0.07);
-  --border-normal:     rgba(255, 255, 255, 0.10);
-  --border-bright:     rgba(255, 255, 255, 0.16);
+  --border-ghost: rgba(255, 255, 255, 0.04);
+  --border-subtle: rgba(255, 255, 255, 0.07);
+  --border-normal: rgba(255, 255, 255, 0.10);
+  --border-bright: rgba(255, 255, 255, 0.16);
 
   /* === TEXT HIERARCHY — GRAYISH TONES === */
-  --text-bright:       #e8e8ec;
-  --text-primary:      #c0c0c6;
-  --text-secondary:    #8a8a92;
-  --text-muted:        #55555e;
-  --text-ghost:        #35353d;
+  --text-bright: #e8e8ec;
+  --text-primary: #c0c0c6;
+  --text-secondary: #8a8a92;
+  --text-muted: #55555e;
+  --text-ghost: #35353d;
 
   /* === ACCENT PALETTE — MUTED + PREMIUM === */
-  --acc-blue:          #5b9cf5;
-  --acc-blue-dim:      rgba(91, 156, 245, 0.12);
-  --acc-purple:        #a78bfa;
-  --acc-purple-dim:    rgba(167, 139, 250, 0.10);
-  --acc-cyan:          #22d3ee;
-  --acc-cyan-dim:      rgba(34, 211, 238, 0.08);
-  --acc-green:         #4ade80;
-  --acc-green-dim:     rgba(74, 222, 128, 0.08);
-  --acc-amber:         #fbbf24;
-  --acc-amber-dim:     rgba(251, 191, 36, 0.08);
-  --acc-red:           #f87171;
-  --acc-red-dim:       rgba(248, 113, 113, 0.08);
-  --acc-pink:          #f472b6;
-  --acc-teal:          #2dd4bf;
+  --acc-blue: #5b9cf5;
+  --acc-blue-dim: rgba(91, 156, 245, 0.12);
+  --acc-purple: #a78bfa;
+  --acc-purple-dim: rgba(167, 139, 250, 0.10);
+  --acc-cyan: #22d3ee;
+  --acc-cyan-dim: rgba(34, 211, 238, 0.08);
+  --acc-green: #4ade80;
+  --acc-green-dim: rgba(74, 222, 128, 0.08);
+  --acc-amber: #fbbf24;
+  --acc-amber-dim: rgba(251, 191, 36, 0.08);
+  --acc-red: #f87171;
+  --acc-red-dim: rgba(248, 113, 113, 0.08);
+  --acc-pink: #f472b6;
+  --acc-teal: #2dd4bf;
 
   /* === GLOW EFFECTS === */
-  --glow-blue:         0 0 20px rgba(91, 156, 245, 0.15);
-  --glow-purple:       0 0 20px rgba(167, 139, 250, 0.12);
-  --glow-cyan:         0 0 20px rgba(34, 211, 238, 0.10);
+  --glow-blue: 0 0 20px rgba(91, 156, 245, 0.15);
+  --glow-purple: 0 0 20px rgba(167, 139, 250, 0.12);
+  --glow-cyan: 0 0 20px rgba(34, 211, 238, 0.10);
 
   /* === SHADOWS === */
-  --shadow-sm:         0 2px 8px rgba(0, 0, 0, 0.5);
-  --shadow-md:         0 8px 32px rgba(0, 0, 0, 0.6);
-  --shadow-lg:         0 16px 64px rgba(0, 0, 0, 0.8);
-  --shadow-inset:      inset 0 1px 0 rgba(255, 255, 255, 0.03);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 8px 32px rgba(0, 0, 0, 0.6);
+  --shadow-lg: 0 16px 64px rgba(0, 0, 0, 0.8);
+  --shadow-inset: inset 0 1px 0 rgba(255, 255, 255, 0.03);
 
   /* === TRANSITIONS === */
-  --ease-out:          cubic-bezier(0.16, 1, 0.3, 1);
-  --duration-fast:     0.12s;
-  --duration-normal:   0.2s;
-  --duration-slow:     0.35s;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 0.12s;
+  --duration-normal: 0.2s;
+  --duration-slow: 0.35s;
 
   /* === RADIUS === */
-  --radius-sm:         6px;
-  --radius-md:         10px;
-  --radius-lg:         14px;
-  --radius-xl:         18px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 18px;
 }
 
 
 /* ─── GLOBAL FONT ──────────────────────────────────────────── */
-body, html,
-.workspace, .app-container,
-.workspace-leaf, .workspace-leaf-content, .view-content,
-.markdown-preview-view, .markdown-rendered,
-.cm-editor, .cm-content, .cm-line,
-.nav-file-title, .nav-folder-title,
-.status-bar, .workspace-tab-header,
-.modal, .prompt, .menu, .suggestion-item,
-input, button, select, textarea {
+body,
+html,
+.workspace,
+.app-container,
+.workspace-leaf,
+.workspace-leaf-content,
+.view-content,
+.nav-file-title,
+.nav-folder-title,
+.status-bar,
+.workspace-tab-header,
+.modal,
+.prompt,
+.menu,
+.suggestion-item,
+input,
+button,
+select,
+textarea {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+}
+
+/* Editor & Reading View Mono Font */
+.markdown-preview-view,
+.markdown-rendered,
+.cm-editor,
+.cm-content,
+.cm-line {
   font-family: 'JetBrains Mono', 'Cascadia Code', 'Fira Code', monospace !important;
 }
 
@@ -163,13 +182,13 @@ body {
 
 /* Folder names */
 .nav-folder-title {
-  font-size: 10px !important;
-  font-weight: 600 !important;
-  letter-spacing: 1.4px !important;
-  text-transform: uppercase !important;
-  color: var(--text-ghost) !important;
-  padding: 6px 10px 3px !important;
-  margin-top: 8px !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  letter-spacing: normal !important;
+  text-transform: none !important;
+  color: var(--text-primary) !important;
+  padding: 4px 10px 4px !important;
+  margin-top: 2px !important;
   background: transparent !important;
   transition: all var(--duration-fast) var(--ease-out) !important;
 }
@@ -309,7 +328,7 @@ body {
 }
 
 /* Tight top spacing for note content */
-.markdown-preview-view .markdown-preview-sizer > div:first-child {
+.markdown-preview-view .markdown-preview-sizer>div:first-child {
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
@@ -436,7 +455,7 @@ body {
   padding: 0.9rem 1.1rem !important;
   margin: 0.7rem 0 !important;
   box-shadow: var(--shadow-inset),
-              var(--shadow-sm) !important;
+    var(--shadow-sm) !important;
   position: relative !important;
   overflow-x: auto !important;
 }
@@ -565,10 +584,12 @@ pre[class*="language-python"]::after,
 code[class*="language-python"]::after {
   content: 'PYTHON' !important;
 }
+
 pre[class*="language-python"],
 pre[class*="language-py"] {
   border-top: 2px solid #3776ab !important;
 }
+
 pre[class*="language-py"]::after,
 code[class*="language-py"]::after {
   content: 'PYTHON' !important;
@@ -581,6 +602,7 @@ pre[class*="language-js"]::after,
 code[class*="language-js"]::after {
   content: 'JAVASCRIPT' !important;
 }
+
 pre[class*="language-javascript"],
 pre[class*="language-js"] {
   border-top: 2px solid #f7df1e !important;
@@ -593,6 +615,7 @@ pre[class*="language-ts"]::after,
 code[class*="language-ts"]::after {
   content: 'TYPESCRIPT' !important;
 }
+
 pre[class*="language-typescript"],
 pre[class*="language-ts"] {
   border-top: 2px solid #3178c6 !important;
@@ -603,6 +626,7 @@ pre[class*="language-java"]::after,
 code[class*="language-java"]::after {
   content: 'JAVA' !important;
 }
+
 pre[class*="language-java"]:not([class*="javascript"]) {
   border-top: 2px solid #ed8b00 !important;
 }
@@ -614,6 +638,7 @@ pre[class*="language-yml"]::after,
 code[class*="language-yml"]::after {
   content: 'YAML' !important;
 }
+
 pre[class*="language-yaml"],
 pre[class*="language-yml"] {
   border-top: 2px solid #cb171e !important;
@@ -624,6 +649,7 @@ pre[class*="language-css"]::after,
 code[class*="language-css"]::after {
   content: 'CSS' !important;
 }
+
 pre[class*="language-css"] {
   border-top: 2px solid #1572b6 !important;
 }
@@ -633,6 +659,7 @@ pre[class*="language-html"]::after,
 code[class*="language-html"]::after {
   content: 'HTML' !important;
 }
+
 pre[class*="language-html"] {
   border-top: 2px solid #e34c26 !important;
 }
@@ -642,6 +669,7 @@ pre[class*="language-json"]::after,
 code[class*="language-json"]::after {
   content: 'JSON' !important;
 }
+
 pre[class*="language-json"] {
   border-top: 2px solid #8bc34a !important;
 }
@@ -651,6 +679,7 @@ pre[class*="language-sql"]::after,
 code[class*="language-sql"]::after {
   content: 'SQL' !important;
 }
+
 pre[class*="language-sql"] {
   border-top: 2px solid #00758f !important;
 }
@@ -664,6 +693,7 @@ pre[class*="language-sh"]::after,
 code[class*="language-sh"]::after {
   content: 'SHELL' !important;
 }
+
 pre[class*="language-bash"],
 pre[class*="language-shell"],
 pre[class*="language-sh"] {
@@ -677,6 +707,7 @@ pre[class*="language-rs"]::after,
 code[class*="language-rs"]::after {
   content: 'RUST' !important;
 }
+
 pre[class*="language-rust"],
 pre[class*="language-rs"] {
   border-top: 2px solid #ce412b !important;
@@ -687,6 +718,7 @@ pre[class*="language-go"]::after,
 code[class*="language-go"]::after {
   content: 'GO' !important;
 }
+
 pre[class*="language-go"] {
   border-top: 2px solid #00add8 !important;
 }
@@ -696,10 +728,12 @@ pre[class*="language-c"]::after,
 code[class*="language-c"]::after {
   content: 'C' !important;
 }
+
 pre[class*="language-cpp"]::after,
 code[class*="language-cpp"]::after {
   content: 'C++' !important;
 }
+
 pre[class*="language-c"],
 pre[class*="language-cpp"] {
   border-top: 2px solid #00599c !important;
@@ -712,6 +746,7 @@ pre[class*="language-dockerfile"]::after,
 code[class*="language-dockerfile"]::after {
   content: 'DOCKER' !important;
 }
+
 pre[class*="language-docker"],
 pre[class*="language-dockerfile"] {
   border-top: 2px solid #2496ed !important;
@@ -726,6 +761,7 @@ pre[class*="language-tf"]::after,
 code[class*="language-tf"]::after {
   content: 'TERRAFORM' !important;
 }
+
 pre[class*="language-hcl"],
 pre[class*="language-terraform"],
 pre[class*="language-tf"] {
@@ -739,6 +775,7 @@ pre[class*="language-md"]::after,
 code[class*="language-md"]::after {
   content: 'MARKDOWN' !important;
 }
+
 pre[class*="language-markdown"],
 pre[class*="language-md"] {
   border-top: 2px solid #83b7cf !important;
@@ -749,6 +786,7 @@ pre[class*="language-graphql"]::after,
 code[class*="language-graphql"]::after {
   content: 'GRAPHQL' !important;
 }
+
 pre[class*="language-graphql"] {
   border-top: 2px solid #e535ab !important;
 }
@@ -758,6 +796,7 @@ pre[class*="language-toml"]::after,
 code[class*="language-toml"]::after {
   content: 'TOML' !important;
 }
+
 pre[class*="language-toml"] {
   border-top: 2px solid #9c4121 !important;
 }
@@ -767,6 +806,7 @@ pre[class*="language-r"]::after,
 code[class*="language-r"]::after {
   content: 'R' !important;
 }
+
 pre[class*="language-r"]:not([class*="rust"]) {
   border-top: 2px solid #276dc3 !important;
 }
@@ -806,7 +846,8 @@ pre[class*="language-"]::after {
 }
 
 /* Strings */
-.cm-string, .cm-string-2 {
+.cm-string,
+.cm-string-2 {
   color: #a5d6ff !important;
 }
 
@@ -816,12 +857,15 @@ pre[class*="language-"]::after {
 }
 
 /* Functions / method calls */
-.cm-def, .cm-callee {
+.cm-def,
+.cm-callee {
   color: #d2a8ff !important;
 }
 
 /* Variables */
-.cm-variable, .cm-variable-2, .cm-variable-3 {
+.cm-variable,
+.cm-variable-2,
+.cm-variable-3 {
   color: #c5cbd3 !important;
 }
 
@@ -836,7 +880,8 @@ pre[class*="language-"]::after {
 }
 
 /* Types / builtins */
-.cm-type, .cm-builtin {
+.cm-type,
+.cm-builtin {
   color: #ffa657 !important;
   font-weight: 500 !important;
 }
@@ -877,6 +922,7 @@ pre[class*="language-"]::after {
   text-decoration: wavy underline !important;
   text-decoration-color: rgba(248, 81, 73, 0.4) !important;
 }
+
 .markdown-rendered blockquote,
 .markdown-preview-view blockquote {
   background: var(--glass-1) !important;
@@ -1000,6 +1046,7 @@ pre[class*="language-"]::after {
 .callout[data-callout="info"] {
   border-left: 3px solid var(--acc-blue) !important;
 }
+
 .callout[data-callout="info"] .callout-title {
   color: var(--acc-blue) !important;
 }
@@ -1007,6 +1054,7 @@ pre[class*="language-"]::after {
 .callout[data-callout="note"] {
   border-left: 3px solid var(--text-muted) !important;
 }
+
 .callout[data-callout="note"] .callout-title {
   color: var(--text-primary) !important;
 }
@@ -1016,6 +1064,7 @@ pre[class*="language-"]::after {
 .callout[data-callout="done"] {
   border-left: 3px solid var(--acc-green) !important;
 }
+
 .callout[data-callout="success"] .callout-title,
 .callout[data-callout="check"] .callout-title,
 .callout[data-callout="done"] .callout-title {
@@ -1027,6 +1076,7 @@ pre[class*="language-"]::after {
 .callout[data-callout="attention"] {
   border-left: 3px solid var(--acc-amber) !important;
 }
+
 .callout[data-callout="warning"] .callout-title,
 .callout[data-callout="caution"] .callout-title,
 .callout[data-callout="attention"] .callout-title {
@@ -1038,6 +1088,7 @@ pre[class*="language-"]::after {
 .callout[data-callout="bug"] {
   border-left: 3px solid var(--acc-red) !important;
 }
+
 .callout[data-callout="danger"] .callout-title,
 .callout[data-callout="error"] .callout-title,
 .callout[data-callout="bug"] .callout-title {
@@ -1049,6 +1100,7 @@ pre[class*="language-"]::after {
 .callout[data-callout="important"] {
   border-left: 3px solid var(--acc-purple) !important;
 }
+
 .callout[data-callout="tip"] .callout-title,
 .callout[data-callout="hint"] .callout-title,
 .callout[data-callout="important"] .callout-title {
@@ -1060,6 +1112,7 @@ pre[class*="language-"]::after {
 .callout[data-callout="summary"] {
   border-left: 3px solid var(--acc-cyan) !important;
 }
+
 .callout[data-callout="example"] .callout-title,
 .callout[data-callout="abstract"] .callout-title,
 .callout[data-callout="summary"] .callout-title {
@@ -1319,6 +1372,7 @@ mark {
   backdrop-filter: blur(20px) !important;
   -webkit-backdrop-filter: blur(20px) !important;
 }
+
 /* ════════════════════════════════════════════════════════════
    SECTION 10 — CANVAS (Premium Styling & Auto-Scale)
    ════════════════════════════════════════════════════════════ */
@@ -1327,7 +1381,7 @@ mark {
 .canvas-wrapper {
   background: var(--ultra-void) !important;
   background-image:
-    radial-gradient(circle, rgba(255,255,255,0.03) 1px, transparent 1px) !important;
+    radial-gradient(circle, rgba(255, 255, 255, 0.03) 1px, transparent 1px) !important;
   background-size: 24px 24px !important;
 }
 
@@ -1339,7 +1393,7 @@ mark {
   box-shadow: var(--shadow-md) !important;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  
+
 }
 
 .canvas-node:hover {
@@ -1350,8 +1404,8 @@ mark {
 .canvas-node.is-focused {
   border-color: var(--acc-blue) !important;
   box-shadow: 0 0 0 2px var(--acc-blue-dim),
-              0 0 30px rgba(91, 156, 245, 0.12),
-              var(--shadow-md) !important;
+    0 0 30px rgba(91, 156, 245, 0.12),
+    var(--shadow-md) !important;
 }
 
 /* Node content typography (safe overrides only) */
@@ -1390,26 +1444,96 @@ mark {
 }
 
 /* ─── Colored Nodes ───────────────────────────────────────── */
-.canvas-node[data-color="1"] { border-color: var(--acc-red) !important; background: rgba(248, 113, 113, 0.04) !important; box-shadow: inset 0 0 30px rgba(248, 113, 113, 0.03), 0 0 16px rgba(248, 113, 113, 0.06) !important; }
-.canvas-node[data-color="2"] { border-color: var(--acc-amber) !important; background: rgba(251, 191, 36, 0.04) !important; box-shadow: inset 0 0 30px rgba(251, 191, 36, 0.03), 0 0 16px rgba(251, 191, 36, 0.06) !important; }
-.canvas-node[data-color="3"] { border-color: var(--acc-green) !important; background: rgba(74, 222, 128, 0.04) !important; box-shadow: inset 0 0 30px rgba(74, 222, 128, 0.03), 0 0 16px rgba(74, 222, 128, 0.06) !important; }
-.canvas-node[data-color="4"] { border-color: var(--acc-cyan) !important; background: rgba(34, 211, 238, 0.04) !important; box-shadow: inset 0 0 30px rgba(34, 211, 238, 0.03), 0 0 16px rgba(34, 211, 238, 0.06) !important; }
-.canvas-node[data-color="5"] { border-color: var(--acc-purple) !important; background: rgba(167, 139, 250, 0.04) !important; box-shadow: inset 0 0 30px rgba(167, 139, 250, 0.03), 0 0 16px rgba(167, 139, 250, 0.06) !important; }
-.canvas-node[data-color="6"] { border-color: var(--acc-blue) !important; background: rgba(91, 156, 245, 0.04) !important; box-shadow: inset 0 0 30px rgba(91, 156, 245, 0.03), 0 0 16px rgba(91, 156, 245, 0.06) !important; }
+.canvas-node[data-color="1"] {
+  border-color: var(--acc-red) !important;
+  background: rgba(248, 113, 113, 0.04) !important;
+  box-shadow: inset 0 0 30px rgba(248, 113, 113, 0.03), 0 0 16px rgba(248, 113, 113, 0.06) !important;
+}
+
+.canvas-node[data-color="2"] {
+  border-color: var(--acc-amber) !important;
+  background: rgba(251, 191, 36, 0.04) !important;
+  box-shadow: inset 0 0 30px rgba(251, 191, 36, 0.03), 0 0 16px rgba(251, 191, 36, 0.06) !important;
+}
+
+.canvas-node[data-color="3"] {
+  border-color: var(--acc-green) !important;
+  background: rgba(74, 222, 128, 0.04) !important;
+  box-shadow: inset 0 0 30px rgba(74, 222, 128, 0.03), 0 0 16px rgba(74, 222, 128, 0.06) !important;
+}
+
+.canvas-node[data-color="4"] {
+  border-color: var(--acc-cyan) !important;
+  background: rgba(34, 211, 238, 0.04) !important;
+  box-shadow: inset 0 0 30px rgba(34, 211, 238, 0.03), 0 0 16px rgba(34, 211, 238, 0.06) !important;
+}
+
+.canvas-node[data-color="5"] {
+  border-color: var(--acc-purple) !important;
+  background: rgba(167, 139, 250, 0.04) !important;
+  box-shadow: inset 0 0 30px rgba(167, 139, 250, 0.03), 0 0 16px rgba(167, 139, 250, 0.06) !important;
+}
+
+.canvas-node[data-color="6"] {
+  border-color: var(--acc-blue) !important;
+  background: rgba(91, 156, 245, 0.04) !important;
+  box-shadow: inset 0 0 30px rgba(91, 156, 245, 0.03), 0 0 16px rgba(91, 156, 245, 0.06) !important;
+}
 
 /* ─── Connections / Edges ─────────────────────────────────── */
-.canvas-edges { filter: none !important; }
-.canvas-edge path { stroke: rgba(255, 255, 255, 0.12) !important; stroke-width: 1.5px !important; transition: stroke var(--duration-fast), stroke-width var(--duration-fast) !important; }
-.canvas-edge:hover path { stroke: rgba(255, 255, 255, 0.3) !important; stroke-width: 2px !important; }
-.canvas-edge.is-focused path { stroke: var(--acc-blue) !important; stroke-width: 2px !important; filter: drop-shadow(0 0 8px rgba(91, 156, 245, 0.35)) !important; }
-.canvas-edge-label { font-family: 'JetBrains Mono', monospace !important; font-size: 10px !important; color: var(--text-muted) !important; background: var(--ultra-raised) !important; border: 1px solid var(--border-subtle) !important; border-radius: 4px !important; padding: 2px 6px !important; }
+.canvas-edges {
+  filter: none !important;
+}
+
+.canvas-edge path {
+  stroke: rgba(255, 255, 255, 0.12) !important;
+  stroke-width: 1.5px !important;
+  transition: stroke var(--duration-fast), stroke-width var(--duration-fast) !important;
+}
+
+.canvas-edge:hover path {
+  stroke: rgba(255, 255, 255, 0.3) !important;
+  stroke-width: 2px !important;
+}
+
+.canvas-edge.is-focused path {
+  stroke: var(--acc-blue) !important;
+  stroke-width: 2px !important;
+  filter: drop-shadow(0 0 8px rgba(91, 156, 245, 0.35)) !important;
+}
+
+.canvas-edge-label {
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 10px !important;
+  color: var(--text-muted) !important;
+  background: var(--ultra-raised) !important;
+  border: 1px solid var(--border-subtle) !important;
+  border-radius: 4px !important;
+  padding: 2px 6px !important;
+}
 
 /* Connection port dots */
-.canvas-node-connection-point { background: var(--acc-blue) !important; border: 2px solid var(--ultra-base) !important; border-radius: 50% !important; width: 10px !important; height: 10px !important; box-shadow: 0 0 8px rgba(91, 156, 245, 0.4) !important; transition: transform var(--duration-fast) var(--ease-out) !important; }
-.canvas-node-connection-point:hover { transform: scale(1.3) !important; box-shadow: 0 0 14px rgba(91, 156, 245, 0.6) !important; }
+.canvas-node-connection-point {
+  background: var(--acc-blue) !important;
+  border: 2px solid var(--ultra-base) !important;
+  border-radius: 50% !important;
+  width: 10px !important;
+  height: 10px !important;
+  box-shadow: 0 0 8px rgba(91, 156, 245, 0.4) !important;
+  transition: transform var(--duration-fast) var(--ease-out) !important;
+}
+
+.canvas-node-connection-point:hover {
+  transform: scale(1.3) !important;
+  box-shadow: 0 0 14px rgba(91, 156, 245, 0.6) !important;
+}
 
 /* ─── Controls and Minimap ────────────────────────────────── */
-.canvas-controls, .canvas-card-menu, .canvas-color-picker, .canvas-minimap, .canvas-node-interaction-menu {
+.canvas-controls,
+.canvas-card-menu,
+.canvas-color-picker,
+.canvas-minimap,
+.canvas-node-interaction-menu {
   background: rgba(16, 16, 20, 0.9) !important;
   border: 1px solid var(--border-normal) !important;
   border-radius: var(--radius-md) !important;
@@ -1418,17 +1542,22 @@ mark {
   -webkit-backdrop-filter: blur(16px) !important;
 }
 
-.canvas-controls .clickable-icon, .canvas-card-menu .canvas-card-menu-button, .canvas-node-interaction-menu .clickable-icon {
+.canvas-controls .clickable-icon,
+.canvas-card-menu .canvas-card-menu-button,
+.canvas-node-interaction-menu .clickable-icon {
   color: var(--text-muted) !important;
   transition: all var(--duration-fast) var(--ease-out) !important;
 }
 
-.canvas-controls .clickable-icon:hover, .canvas-card-menu .canvas-card-menu-button:hover, .canvas-node-interaction-menu .clickable-icon:hover {
+.canvas-controls .clickable-icon:hover,
+.canvas-card-menu .canvas-card-menu-button:hover,
+.canvas-node-interaction-menu .clickable-icon:hover {
   color: var(--text-bright) !important;
   background: var(--glass-3) !important;
 }
 
-.canvas-controls .clickable-icon.is-active, .canvas-color-picker-item.is-active {
+.canvas-controls .clickable-icon.is-active,
+.canvas-color-picker-item.is-active {
   color: var(--acc-blue) !important;
   background: var(--acc-blue-dim) !important;
   box-shadow: 0 0 0 2px rgba(91, 156, 245, 0.3) !important;
@@ -1651,9 +1780,12 @@ mark {
    ════════════════════════════════════════════════════════════ */
 
 @media print {
+
   .workspace-ribbon,
   .workspace-tabs,
-  .status-bar { display: none !important; }
+  .status-bar {
+    display: none !important;
+  }
 
   .markdown-rendered,
   .markdown-preview-view {
@@ -1685,23 +1817,40 @@ customization. Just swap out the color variable names in the prefix groups.
 
 :root {
   /* ================================ Colors ================================ */
-  --red: #e22c3c;                /* Default Prefix: None */
-  --red-orange: #e9404b;         /* Default Prefix: None */
-  --orange: #ee6748;             /* Default Prefix: None */
-  --amber: #fa9f50;              /* Default Prefix: None */
-  --yellow: #ffd85e;             /* Default Prefix: None */
-  --lime: #97e768;               /* Default Prefix: None */
-  --mint: #52eea3;               /* Default Prefix: 00 */
-  --cyan: #51e1e9;               /* Default Prefix: 01 */
-  --cool-cyan: #43cfea;          /* Default Prefix: None */
-  --light-blue: #54b6f8;         /* Default Prefix: 02 */
-  --blue: #437cf3;               /* Default Prefix: 03 */
-  --blue-violet: #6f51f4;        /* Default Prefix: None */
-  --violet: #9446f8;             /* Default Prefix: 04 */
-  --purple: #c952ed;             /* Default Prefix: 05 */
-  --magenta: #e54f9b;            /* Default Prefix: 06 */
-  --hot-red: #e3365e;            /* Default Prefix: 07 */
-  --cool-gray: #515768;          /* Default Prefix: 99 */
+  --red: #e22c3c;
+  /* Default Prefix: None */
+  --red-orange: #e9404b;
+  /* Default Prefix: None */
+  --orange: #ee6748;
+  /* Default Prefix: None */
+  --amber: #fa9f50;
+  /* Default Prefix: None */
+  --yellow: #ffd85e;
+  /* Default Prefix: None */
+  --lime: #97e768;
+  /* Default Prefix: None */
+  --mint: #52eea3;
+  /* Default Prefix: 00 */
+  --cyan: #51e1e9;
+  /* Default Prefix: 01 */
+  --cool-cyan: #43cfea;
+  /* Default Prefix: None */
+  --light-blue: #54b6f8;
+  /* Default Prefix: 02 */
+  --blue: #437cf3;
+  /* Default Prefix: 03 */
+  --blue-violet: #6f51f4;
+  /* Default Prefix: None */
+  --violet: #9446f8;
+  /* Default Prefix: 04 */
+  --purple: #c952ed;
+  /* Default Prefix: 05 */
+  --magenta: #e54f9b;
+  /* Default Prefix: 06 */
+  --hot-red: #e3365e;
+  /* Default Prefix: 07 */
+  --cool-gray: #515768;
+  /* Default Prefix: 99 */
 
   --default-text-color: #d0d0d0;
   --highlight: #fff;
@@ -1745,6 +1894,7 @@ customization. Just swap out the color variable names in the prefix groups.
 
 /* Narrower Padding on Desktop*/
 @media only screen and (min-width: 768px) {
+
   .nav-file-title,
   .nav-folder-title {
     /* padding: 3px 5px 2px 4px !important; */
@@ -1767,557 +1917,387 @@ these to suit your own folder structure and vault theme!
 /* ------------------------------- 00 Prefix -------------------------------- */
 .nav-folder-title[data-path^="00"] {
   color: var(--mint);
-  --nav-item-color-hover: color-mix(
-    in srgb,
-    var(--mint) var(--fg-contrast-amount),
-    var(--contrast-color)
-  );
-  --nav-item-background-hover: color-mix(
-    in srgb,
-    var(--mint) var(--bg-contrast-amount),
-    transparent
-  );
-  --background-modifier-border-focus: color-mix(
-    in srgb,
-    var(--mint) 40%,
-    transparent
-  );
+  --nav-item-color-hover: color-mix(in srgb,
+      var(--mint) var(--fg-contrast-amount),
+      var(--contrast-color));
+  --nav-item-background-hover: color-mix(in srgb,
+      var(--mint) var(--bg-contrast-amount),
+      transparent);
+  --background-modifier-border-focus: color-mix(in srgb,
+      var(--mint) 40%,
+      transparent);
   --nav-collapse-icon-color: color-mix(in srgb, var(--mint) 60%, transparent);
 }
+
 .nav-folder-title[data-path^="00"]:hover {
-  --nav-collapse-icon-color: color-mix(
-    in srgb,
-    var(--mint) 60%,
-    var(--contrast-color)
-  );
+  --nav-collapse-icon-color: color-mix(in srgb,
+      var(--mint) 60%,
+      var(--contrast-color));
 }
+
 .tree-item-children .nav-folder:has(.nav-folder-title[data-path^="00"]) {
-  --nav-indentation-guide-color: color-mix(
-    in srgb,
-    var(--mint) var(--medium-contrast-amount),
-    transparent
-  );
+  --nav-indentation-guide-color: color-mix(in srgb,
+      var(--mint) var(--medium-contrast-amount),
+      transparent);
 }
-.tree-item-children
-  .nav-folder:has(.nav-folder-title[data-path^="00"])
-  .nav-file-title {
-  color: color-mix(
-    in srgb,
-    var(--mint) var(--medium-contrast-amount),
-    var(--default-text-color)
-  );
-  --nav-item-background-hover: color-mix(
-    in srgb,
-    color-mix(in srgb, var(--mint) 50%, var(--highlight))
-      var(--bg-contrast-amount),
-    transparent
-  );
-  --background-modifier-border-focus: color-mix(
-    in srgb,
-    var(--mint) 40%,
-    transparent
-  );
-  --nav-item-background-active: color-mix(
-    in srgb,
-    var(--mint) var(--active-contrast-amount),
-    transparent
-  );
+
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="00"]) .nav-file-title {
+  color: color-mix(in srgb,
+      var(--mint) var(--medium-contrast-amount),
+      var(--default-text-color));
+  --nav-item-background-hover: color-mix(in srgb,
+      color-mix(in srgb, var(--mint) 50%, var(--highlight)) var(--bg-contrast-amount),
+      transparent);
+  --background-modifier-border-focus: color-mix(in srgb,
+      var(--mint) 40%,
+      transparent);
+  --nav-item-background-active: color-mix(in srgb,
+      var(--mint) var(--active-contrast-amount),
+      transparent);
 }
 
 /* ------------------------------- 01 Prefix -------------------------------- */
 .nav-folder-title[data-path^="01"] {
   color: var(--cyan);
-  --nav-item-color-hover: color-mix(
-    in srgb,
-    var(--cyan) var(--fg-contrast-amount),
-    var(--contrast-color)
-  );
-  --nav-item-background-hover: color-mix(
-    in srgb,
-    var(--cyan) var(--bg-contrast-amount),
-    transparent
-  );
-  --background-modifier-border-focus: color-mix(
-    in srgb,
-    var(--cyan) 40%,
-    transparent
-  );
+  --nav-item-color-hover: color-mix(in srgb,
+      var(--cyan) var(--fg-contrast-amount),
+      var(--contrast-color));
+  --nav-item-background-hover: color-mix(in srgb,
+      var(--cyan) var(--bg-contrast-amount),
+      transparent);
+  --background-modifier-border-focus: color-mix(in srgb,
+      var(--cyan) 40%,
+      transparent);
   --nav-collapse-icon-color: color-mix(in srgb, var(--cyan) 60%, transparent);
 }
+
 .nav-folder-title[data-path^="01"]:hover {
-  --nav-collapse-icon-color: color-mix(
-    in srgb,
-    var(--cyan) 60%,
-    var(--contrast-color)
-  );
+  --nav-collapse-icon-color: color-mix(in srgb,
+      var(--cyan) 60%,
+      var(--contrast-color));
 }
+
 .tree-item-children .nav-folder:has(.nav-folder-title[data-path^="01"]) {
-  --nav-indentation-guide-color: color-mix(
-    in srgb,
-    var(--cyan) var(--medium-contrast-amount),
-    transparent
-  );
+  --nav-indentation-guide-color: color-mix(in srgb,
+      var(--cyan) var(--medium-contrast-amount),
+      transparent);
 }
-.tree-item-children
-  .nav-folder:has(.nav-folder-title[data-path^="01"])
-  .nav-file-title {
-  color: color-mix(
-    in srgb,
-    var(--cyan) var(--medium-contrast-amount),
-    var(--default-text-color)
-  );
-  --nav-item-background-hover: color-mix(
-    in srgb,
-    color-mix(in srgb, var(--cyan) 50%, var(--highlight))
-      var(--bg-contrast-amount),
-    transparent
-  );
-  --background-modifier-border-focus: color-mix(
-    in srgb,
-    var(--cyan) 40%,
-    transparent
-  );
-  --nav-item-background-active: color-mix(
-    in srgb,
-    var(--cyan) var(--active-contrast-amount),
-    transparent
-  );
+
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="01"]) .nav-file-title {
+  color: color-mix(in srgb,
+      var(--cyan) var(--medium-contrast-amount),
+      var(--default-text-color));
+  --nav-item-background-hover: color-mix(in srgb,
+      color-mix(in srgb, var(--cyan) 50%, var(--highlight)) var(--bg-contrast-amount),
+      transparent);
+  --background-modifier-border-focus: color-mix(in srgb,
+      var(--cyan) 40%,
+      transparent);
+  --nav-item-background-active: color-mix(in srgb,
+      var(--cyan) var(--active-contrast-amount),
+      transparent);
 }
 
 /* ------------------------------- 02 Prefix -------------------------------- */
 .nav-folder-title[data-path^="02"] {
   color: var(--light-blue);
-  --nav-item-color-hover: color-mix(
-    in srgb,
-    var(--light-blue) var(--fg-contrast-amount),
-    var(--contrast-color)
-  );
-  --nav-item-background-hover: color-mix(
-    in srgb,
-    var(--light-blue) var(--bg-contrast-amount),
-    transparent
-  );
-  --background-modifier-border-focus: color-mix(
-    in srgb,
-    var(--light-blue) 40%,
-    transparent
-  );
-  --nav-collapse-icon-color: color-mix(
-    in srgb,
-    var(--light-blue) 60%,
-    transparent
-  );
+  --nav-item-color-hover: color-mix(in srgb,
+      var(--light-blue) var(--fg-contrast-amount),
+      var(--contrast-color));
+  --nav-item-background-hover: color-mix(in srgb,
+      var(--light-blue) var(--bg-contrast-amount),
+      transparent);
+  --background-modifier-border-focus: color-mix(in srgb,
+      var(--light-blue) 40%,
+      transparent);
+  --nav-collapse-icon-color: color-mix(in srgb,
+      var(--light-blue) 60%,
+      transparent);
 }
+
 .nav-folder-title[data-path^="02"]:hover {
-  --nav-collapse-icon-color: color-mix(
-    in srgb,
-    var(--light-blue) 60%,
-    var(--contrast-color)
-  );
+  --nav-collapse-icon-color: color-mix(in srgb,
+      var(--light-blue) 60%,
+      var(--contrast-color));
 }
+
 .tree-item-children .nav-folder:has(.nav-folder-title[data-path^="02"]) {
-  --nav-indentation-guide-color: color-mix(
-    in srgb,
-    var(--light-blue) var(--medium-contrast-amount),
-    transparent
-  );
+  --nav-indentation-guide-color: color-mix(in srgb,
+      var(--light-blue) var(--medium-contrast-amount),
+      transparent);
 }
-.tree-item-children
-  .nav-folder:has(.nav-folder-title[data-path^="02"])
-  .nav-file-title {
-  color: color-mix(
-    in srgb,
-    var(--light-blue) var(--medium-contrast-amount),
-    var(--default-text-color)
-  );
-  --nav-item-background-hover: color-mix(
-    in srgb,
-    color-mix(in srgb, var(--light-blue) 50%, var(--highlight))
-      var(--bg-contrast-amount),
-    transparent
-  );
-  --background-modifier-border-focus: color-mix(
-    in srgb,
-    var(--light-blue) 40%,
-    transparent
-  );
-  --nav-item-background-active: color-mix(
-    in srgb,
-    var(--light-blue) var(--active-contrast-amount),
-    transparent
-  );
+
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="02"]) .nav-file-title {
+  color: color-mix(in srgb,
+      var(--light-blue) var(--medium-contrast-amount),
+      var(--default-text-color));
+  --nav-item-background-hover: color-mix(in srgb,
+      color-mix(in srgb, var(--light-blue) 50%, var(--highlight)) var(--bg-contrast-amount),
+      transparent);
+  --background-modifier-border-focus: color-mix(in srgb,
+      var(--light-blue) 40%,
+      transparent);
+  --nav-item-background-active: color-mix(in srgb,
+      var(--light-blue) var(--active-contrast-amount),
+      transparent);
 }
 
 /* ------------------------------- 03 Prefix -------------------------------- */
 .nav-folder-title[data-path^="03"] {
   color: var(--blue);
-  --nav-item-color-hover: color-mix(
-    in srgb,
-    var(--blue) var(--fg-contrast-amount),
-    var(--contrast-color)
-  );
-  --nav-item-background-hover: color-mix(
-    in srgb,
-    var(--blue) var(--bg-contrast-amount),
-    transparent
-  );
-  --background-modifier-border-focus: color-mix(
-    in srgb,
-    var(--blue) 40%,
-    transparent
-  );
+  --nav-item-color-hover: color-mix(in srgb,
+      var(--blue) var(--fg-contrast-amount),
+      var(--contrast-color));
+  --nav-item-background-hover: color-mix(in srgb,
+      var(--blue) var(--bg-contrast-amount),
+      transparent);
+  --background-modifier-border-focus: color-mix(in srgb,
+      var(--blue) 40%,
+      transparent);
   --nav-collapse-icon-color: color-mix(in srgb, var(--blue) 60%, transparent);
 }
+
 .nav-folder-title[data-path^="03"]:hover {
-  --nav-collapse-icon-color: color-mix(
-    in srgb,
-    var(--blue) 60%,
-    var(--contrast-color)
-  );
+  --nav-collapse-icon-color: color-mix(in srgb,
+      var(--blue) 60%,
+      var(--contrast-color));
 }
+
 .tree-item-children .nav-folder:has(.nav-folder-title[data-path^="03"]) {
-  --nav-indentation-guide-color: color-mix(
-    in srgb,
-    var(--blue) var(--medium-contrast-amount),
-    transparent
-  );
+  --nav-indentation-guide-color: color-mix(in srgb,
+      var(--blue) var(--medium-contrast-amount),
+      transparent);
 }
-.tree-item-children
-  .nav-folder:has(.nav-folder-title[data-path^="03"])
-  .nav-file-title {
-  color: color-mix(
-    in srgb,
-    var(--blue) var(--medium-contrast-amount),
-    var(--default-text-color)
-  );
-  --nav-item-background-hover: color-mix(
-    in srgb,
-    color-mix(in srgb, var(--blue) 50%, var(--highlight))
-      var(--bg-contrast-amount),
-    transparent
-  );
-  --background-modifier-border-focus: color-mix(
-    in srgb,
-    var(--blue) 40%,
-    transparent
-  );
-  --nav-item-background-active: color-mix(
-    in srgb,
-    var(--blue) var(--active-contrast-amount),
-    transparent
-  );
+
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="03"]) .nav-file-title {
+  color: color-mix(in srgb,
+      var(--blue) var(--medium-contrast-amount),
+      var(--default-text-color));
+  --nav-item-background-hover: color-mix(in srgb,
+      color-mix(in srgb, var(--blue) 50%, var(--highlight)) var(--bg-contrast-amount),
+      transparent);
+  --background-modifier-border-focus: color-mix(in srgb,
+      var(--blue) 40%,
+      transparent);
+  --nav-item-background-active: color-mix(in srgb,
+      var(--blue) var(--active-contrast-amount),
+      transparent);
 }
 
 /* ------------------------------- 04 Prefix -------------------------------- */
 .nav-folder-title[data-path^="04"] {
   color: var(--violet);
-  --nav-item-color-hover: color-mix(
-    in srgb,
-    var(--violet) var(--fg-contrast-amount),
-    var(--contrast-color)
-  );
-  --nav-item-background-hover: color-mix(
-    in srgb,
-    var(--violet) var(--bg-contrast-amount),
-    transparent
-  );
-  --background-modifier-border-focus: color-mix(
-    in srgb,
-    var(--violet) 40%,
-    transparent
-  );
+  --nav-item-color-hover: color-mix(in srgb,
+      var(--violet) var(--fg-contrast-amount),
+      var(--contrast-color));
+  --nav-item-background-hover: color-mix(in srgb,
+      var(--violet) var(--bg-contrast-amount),
+      transparent);
+  --background-modifier-border-focus: color-mix(in srgb,
+      var(--violet) 40%,
+      transparent);
   --nav-collapse-icon-color: color-mix(in srgb, var(--violet) 60%, transparent);
 }
+
 .nav-folder-title[data-path^="04"]:hover {
-  --nav-collapse-icon-color: color-mix(
-    in srgb,
-    var(--violet) 60%,
-    var(--contrast-color)
-  );
+  --nav-collapse-icon-color: color-mix(in srgb,
+      var(--violet) 60%,
+      var(--contrast-color));
 }
+
 .tree-item-children .nav-folder:has(.nav-folder-title[data-path^="04"]) {
-  --nav-indentation-guide-color: color-mix(
-    in srgb,
-    var(--violet) var(--medium-contrast-amount),
-    transparent
-  );
+  --nav-indentation-guide-color: color-mix(in srgb,
+      var(--violet) var(--medium-contrast-amount),
+      transparent);
 }
-.tree-item-children
-  .nav-folder:has(.nav-folder-title[data-path^="04"])
-  .nav-file-title {
-  color: color-mix(
-    in srgb,
-    var(--violet) var(--medium-contrast-amount),
-    var(--default-text-color)
-  );
-  --nav-item-background-hover: color-mix(
-    in srgb,
-    color-mix(in srgb, var(--violet) 50%, var(--highlight))
-      var(--bg-contrast-amount),
-    transparent
-  );
-  --background-modifier-border-focus: color-mix(
-    in srgb,
-    var(--violet) 40%,
-    transparent
-  );
-  --nav-item-background-active: color-mix(
-    in srgb,
-    var(--violet) var(--active-contrast-amount),
-    transparent
-  );
+
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="04"]) .nav-file-title {
+  color: color-mix(in srgb,
+      var(--violet) var(--medium-contrast-amount),
+      var(--default-text-color));
+  --nav-item-background-hover: color-mix(in srgb,
+      color-mix(in srgb, var(--violet) 50%, var(--highlight)) var(--bg-contrast-amount),
+      transparent);
+  --background-modifier-border-focus: color-mix(in srgb,
+      var(--violet) 40%,
+      transparent);
+  --nav-item-background-active: color-mix(in srgb,
+      var(--violet) var(--active-contrast-amount),
+      transparent);
 }
 
 /* ------------------------------- 05 Prefix -------------------------------- */
 .nav-folder-title[data-path^="05"] {
   color: var(--purple);
-  --nav-item-color-hover: color-mix(
-    in srgb,
-    var(--purple) var(--fg-contrast-amount),
-    var(--contrast-color)
-  );
-  --nav-item-background-hover: color-mix(
-    in srgb,
-    var(--purple) var(--bg-contrast-amount),
-    transparent
-  );
-  --background-modifier-border-focus: color-mix(
-    in srgb,
-    var(--purple) 40%,
-    transparent
-  );
+  --nav-item-color-hover: color-mix(in srgb,
+      var(--purple) var(--fg-contrast-amount),
+      var(--contrast-color));
+  --nav-item-background-hover: color-mix(in srgb,
+      var(--purple) var(--bg-contrast-amount),
+      transparent);
+  --background-modifier-border-focus: color-mix(in srgb,
+      var(--purple) 40%,
+      transparent);
   --nav-collapse-icon-color: color-mix(in srgb, var(--purple) 60%, transparent);
 }
+
 .nav-folder-title[data-path^="05"]:hover {
-  --nav-collapse-icon-color: color-mix(
-    in srgb,
-    var(--purple) 60%,
-    var(--contrast-color)
-  );
+  --nav-collapse-icon-color: color-mix(in srgb,
+      var(--purple) 60%,
+      var(--contrast-color));
 }
+
 .tree-item-children .nav-folder:has(.nav-folder-title[data-path^="05"]) {
-  --nav-indentation-guide-color: color-mix(
-    in srgb,
-    var(--purple) var(--medium-contrast-amount),
-    transparent
-  );
+  --nav-indentation-guide-color: color-mix(in srgb,
+      var(--purple) var(--medium-contrast-amount),
+      transparent);
 }
-.tree-item-children
-  .nav-folder:has(.nav-folder-title[data-path^="05"])
-  .nav-file-title {
-  color: color-mix(
-    in srgb,
-    var(--purple) var(--medium-contrast-amount),
-    var(--default-text-color)
-  );
-  --nav-item-background-hover: color-mix(
-    in srgb,
-    color-mix(in srgb, var(--purple) 50%, var(--highlight))
-      var(--bg-contrast-amount),
-    transparent
-  );
-  --background-modifier-border-focus: color-mix(
-    in srgb,
-    var(--purple) 40%,
-    transparent
-  );
-  --nav-item-background-active: color-mix(
-    in srgb,
-    var(--purple) var(--active-contrast-amount),
-    transparent
-  );
+
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="05"]) .nav-file-title {
+  color: color-mix(in srgb,
+      var(--purple) var(--medium-contrast-amount),
+      var(--default-text-color));
+  --nav-item-background-hover: color-mix(in srgb,
+      color-mix(in srgb, var(--purple) 50%, var(--highlight)) var(--bg-contrast-amount),
+      transparent);
+  --background-modifier-border-focus: color-mix(in srgb,
+      var(--purple) 40%,
+      transparent);
+  --nav-item-background-active: color-mix(in srgb,
+      var(--purple) var(--active-contrast-amount),
+      transparent);
 }
 
 /* ------------------------------- 06 Prefix -------------------------------- */
 .nav-folder-title[data-path^="06"] {
   color: var(--magenta);
-  --nav-item-color-hover: color-mix(
-    in srgb,
-    var(--magenta) var(--fg-contrast-amount),
-    var(--contrast-color)
-  );
-  --nav-item-background-hover: color-mix(
-    in srgb,
-    var(--magenta) var(--bg-contrast-amount),
-    transparent
-  );
-  --background-modifier-border-focus: color-mix(
-    in srgb,
-    var(--magenta) 40%,
-    transparent
-  );
-  --nav-collapse-icon-color: color-mix(
-    in srgb,
-    var(--magenta) 60%,
-    transparent
-  );
+  --nav-item-color-hover: color-mix(in srgb,
+      var(--magenta) var(--fg-contrast-amount),
+      var(--contrast-color));
+  --nav-item-background-hover: color-mix(in srgb,
+      var(--magenta) var(--bg-contrast-amount),
+      transparent);
+  --background-modifier-border-focus: color-mix(in srgb,
+      var(--magenta) 40%,
+      transparent);
+  --nav-collapse-icon-color: color-mix(in srgb,
+      var(--magenta) 60%,
+      transparent);
 }
+
 .nav-folder-title[data-path^="06"]:hover {
-  --nav-collapse-icon-color: color-mix(
-    in srgb,
-    var(--magenta) 60%,
-    var(--contrast-color)
-  );
+  --nav-collapse-icon-color: color-mix(in srgb,
+      var(--magenta) 60%,
+      var(--contrast-color));
 }
+
 .tree-item-children .nav-folder:has(.nav-folder-title[data-path^="06"]) {
-  --nav-indentation-guide-color: color-mix(
-    in srgb,
-    var(--magenta) var(--medium-contrast-amount),
-    transparent
-  );
+  --nav-indentation-guide-color: color-mix(in srgb,
+      var(--magenta) var(--medium-contrast-amount),
+      transparent);
 }
-.tree-item-children
-  .nav-folder:has(.nav-folder-title[data-path^="06"])
-  .nav-file-title {
-  color: color-mix(
-    in srgb,
-    var(--magenta) var(--medium-contrast-amount),
-    var(--default-text-color)
-  );
-  --nav-item-background-hover: color-mix(
-    in srgb,
-    color-mix(in srgb, var(--magenta) 50%, var(--highlight))
-      var(--bg-contrast-amount),
-    transparent
-  );
-  --background-modifier-border-focus: color-mix(
-    in srgb,
-    var(--magenta) 40%,
-    transparent
-  );
-  --nav-item-background-active: color-mix(
-    in srgb,
-    var(--magenta) var(--active-contrast-amount),
-    transparent
-  );
+
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="06"]) .nav-file-title {
+  color: color-mix(in srgb,
+      var(--magenta) var(--medium-contrast-amount),
+      var(--default-text-color));
+  --nav-item-background-hover: color-mix(in srgb,
+      color-mix(in srgb, var(--magenta) 50%, var(--highlight)) var(--bg-contrast-amount),
+      transparent);
+  --background-modifier-border-focus: color-mix(in srgb,
+      var(--magenta) 40%,
+      transparent);
+  --nav-item-background-active: color-mix(in srgb,
+      var(--magenta) var(--active-contrast-amount),
+      transparent);
 }
 
 /* ------------------------------- 07 Prefix -------------------------------- */
 .nav-folder-title[data-path^="07"] {
   color: var(--hot-red);
-  --nav-item-color-hover: color-mix(
-    in srgb,
-    var(--hot-red) var(--fg-contrast-amount),
-    var(--contrast-color)
-  );
-  --nav-item-background-hover: color-mix(
-    in srgb,
-    var(--hot-red) var(--bg-contrast-amount),
-    transparent
-  );
-  --background-modifier-border-focus: color-mix(
-    in srgb,
-    var(--hot-red) 40%,
-    transparent
-  );
-  --nav-collapse-icon-color: color-mix(
-    in srgb,
-    var(--hot-red) 60%,
-    transparent
-  );
+  --nav-item-color-hover: color-mix(in srgb,
+      var(--hot-red) var(--fg-contrast-amount),
+      var(--contrast-color));
+  --nav-item-background-hover: color-mix(in srgb,
+      var(--hot-red) var(--bg-contrast-amount),
+      transparent);
+  --background-modifier-border-focus: color-mix(in srgb,
+      var(--hot-red) 40%,
+      transparent);
+  --nav-collapse-icon-color: color-mix(in srgb,
+      var(--hot-red) 60%,
+      transparent);
 }
+
 .nav-folder-title[data-path^="07"]:hover {
-  --nav-collapse-icon-color: color-mix(
-    in srgb,
-    var(--hot-red) 60%,
-    var(--contrast-color)
-  );
+  --nav-collapse-icon-color: color-mix(in srgb,
+      var(--hot-red) 60%,
+      var(--contrast-color));
 }
+
 .tree-item-children .nav-folder:has(.nav-folder-title[data-path^="07"]) {
-  --nav-indentation-guide-color: color-mix(
-    in srgb,
-    var(--hot-red) var(--medium-contrast-amount),
-    transparent
-  );
+  --nav-indentation-guide-color: color-mix(in srgb,
+      var(--hot-red) var(--medium-contrast-amount),
+      transparent);
 }
-.tree-item-children
-  .nav-folder:has(.nav-folder-title[data-path^="07"])
-  .nav-file-title {
-  color: color-mix(
-    in srgb,
-    var(--hot-red) var(--medium-contrast-amount),
-    var(--default-text-color)
-  );
-  --nav-item-background-hover: color-mix(
-    in srgb,
-    color-mix(in srgb, var(--hot-red) 50%, var(--highlight))
-      var(--bg-contrast-amount),
-    transparent
-  );
-  --background-modifier-border-focus: color-mix(
-    in srgb,
-    var(--hot-red) 40%,
-    transparent
-  );
-  --nav-item-background-active: color-mix(
-    in srgb,
-    var(--hot-red) var(--active-contrast-amount),
-    transparent
-  );
+
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="07"]) .nav-file-title {
+  color: color-mix(in srgb,
+      var(--hot-red) var(--medium-contrast-amount),
+      var(--default-text-color));
+  --nav-item-background-hover: color-mix(in srgb,
+      color-mix(in srgb, var(--hot-red) 50%, var(--highlight)) var(--bg-contrast-amount),
+      transparent);
+  --background-modifier-border-focus: color-mix(in srgb,
+      var(--hot-red) 40%,
+      transparent);
+  --nav-item-background-active: color-mix(in srgb,
+      var(--hot-red) var(--active-contrast-amount),
+      transparent);
 }
 
 /* ------------------------------- 99 Prefix -------------------------------- */
 .nav-folder-title[data-path^="99"] {
   color: var(--cool-gray);
-  --nav-item-color-hover: color-mix(
-    in srgb,
-    var(--cool-gray) var(--fg-contrast-amount),
-    var(--contrast-color)
-  );
-  --nav-item-background-hover: color-mix(
-    in srgb,
-    var(--cool-gray) var(--bg-contrast-amount),
-    transparent
-  );
-  --background-modifier-border-focus: color-mix(
-    in srgb,
-    var(--cool-gray) 40%,
-    transparent
-  );
-  --nav-collapse-icon-color: color-mix(
-    in srgb,
-    var(--cool-gray) 60%,
-    transparent
-  );
+  --nav-item-color-hover: color-mix(in srgb,
+      var(--cool-gray) var(--fg-contrast-amount),
+      var(--contrast-color));
+  --nav-item-background-hover: color-mix(in srgb,
+      var(--cool-gray) var(--bg-contrast-amount),
+      transparent);
+  --background-modifier-border-focus: color-mix(in srgb,
+      var(--cool-gray) 40%,
+      transparent);
+  --nav-collapse-icon-color: color-mix(in srgb,
+      var(--cool-gray) 60%,
+      transparent);
 }
+
 .nav-folder-title[data-path^="99"]:hover {
-  --nav-collapse-icon-color: color-mix(
-    in srgb,
-    var(--cool-gray) 60%,
-    var(--contrast-color)
-  );
+  --nav-collapse-icon-color: color-mix(in srgb,
+      var(--cool-gray) 60%,
+      var(--contrast-color));
 }
+
 .tree-item-children .nav-folder:has(.nav-folder-title[data-path^="99"]) {
-  --nav-indentation-guide-color: color-mix(
-    in srgb,
-    var(--cool-gray) var(--medium-contrast-amount),
-    transparent
-  );
+  --nav-indentation-guide-color: color-mix(in srgb,
+      var(--cool-gray) var(--medium-contrast-amount),
+      transparent);
 }
-.tree-item-children
-  .nav-folder:has(.nav-folder-title[data-path^="99"])
-  .nav-file-title {
-  color: color-mix(
-    in srgb,
-    var(--cool-gray) var(--medium-contrast-amount),
-    var(--default-text-color)
-  );
-  --nav-item-background-hover: color-mix(
-    in srgb,
-    color-mix(in srgb, var(--cool-gray) 50%, var(--highlight))
-      var(--bg-contrast-amount),
-    transparent
-  );
-  --background-modifier-border-focus: color-mix(
-    in srgb,
-    var(--cool-gray) 40%,
-    transparent
-  );
-  --nav-item-background-active: color-mix(
-    in srgb,
-    var(--cool-gray) var(--active-contrast-amount),
-    transparent
-  );
+
+.tree-item-children .nav-folder:has(.nav-folder-title[data-path^="99"]) .nav-file-title {
+  color: color-mix(in srgb,
+      var(--cool-gray) var(--medium-contrast-amount),
+      var(--default-text-color));
+  --nav-item-background-hover: color-mix(in srgb,
+      color-mix(in srgb, var(--cool-gray) 50%, var(--highlight)) var(--bg-contrast-amount),
+      transparent);
+  --background-modifier-border-focus: color-mix(in srgb,
+      var(--cool-gray) 40%,
+      transparent);
+  --nav-item-background-active: color-mix(in srgb,
+      var(--cool-gray) var(--active-contrast-amount),
+      transparent);
 }
 
 
@@ -2403,11 +2383,9 @@ https://angel-rs.github.io/css-color-filter-generator
   --pill-cover-hover: color-mix(in srgb, var(--accent-color) 60%, transparent);
   --background-modifier-border-focus: var(--accent-color);
   --background-modifier-border: var(--accent-color-trans);
-  --background-modifier-hover: color-mix(
-    in srgb,
-    var(--accent-color) 60%,
-    transparent
-  );
+  --background-modifier-hover: color-mix(in srgb,
+      var(--accent-color) 60%,
+      transparent);
 
   color: var(--accent-color);
   background-color: var(--page-color);
@@ -2419,15 +2397,13 @@ https://angel-rs.github.io/css-color-filter-generator
 .page-manila {
   --page-color: var(--page-manila);
   --accent-color: var(--pen-black);
-  --accent-color-trans: color-mix(
-    in srgb,
-    var(--accent-color) 15%,
-    transparent
-  );
-  --image-effect: brightness(0) saturate(100%) invert(14%) sepia(19%)
-    saturate(296%) hue-rotate(5deg) brightness(90%) contrast(96%);
+  --accent-color-trans: color-mix(in srgb,
+      var(--accent-color) 15%,
+      transparent);
+  --image-effect: brightness(0) saturate(100%) invert(14%) sepia(19%) saturate(296%) hue-rotate(5deg) brightness(90%) contrast(96%);
   color-scheme: light;
 }
+
 .embed-manila img {
   background-color: var(--page-manila);
 }
@@ -2437,15 +2413,13 @@ https://angel-rs.github.io/css-color-filter-generator
 .page-white {
   --page-color: var(--page-white);
   --accent-color: var(--neutral-pen-black);
-  --accent-color-trans: color-mix(
-    in srgb,
-    var(--accent-color) 15%,
-    transparent
-  );
-  --image-effect: brightness(0) saturate(100%) invert(14%) sepia(19%)
-    saturate(296%) hue-rotate(5deg) brightness(90%) contrast(96%);
+  --accent-color-trans: color-mix(in srgb,
+      var(--accent-color) 15%,
+      transparent);
+  --image-effect: brightness(0) saturate(100%) invert(14%) sepia(19%) saturate(296%) hue-rotate(5deg) brightness(90%) contrast(96%);
   color-scheme: light;
 }
+
 .embed-white img {
   background-color: var(--page-white);
 }
@@ -2455,42 +2429,34 @@ https://angel-rs.github.io/css-color-filter-generator
 .page-blueprint {
   --page-color: var(--page-blue);
   --accent-color: var(--pen-white);
-  --accent-color-trans: color-mix(
-    in srgb,
-    var(--accent-color) 15%,
-    transparent
-  );
-  --image-effect: brightness(0) saturate(100%) invert(89%) sepia(1%)
-    saturate(2714%) hue-rotate(196deg) brightness(107%) contrast(98%);
+  --accent-color-trans: color-mix(in srgb,
+      var(--accent-color) 15%,
+      transparent);
+  --image-effect: brightness(0) saturate(100%) invert(89%) sepia(1%) saturate(2714%) hue-rotate(196deg) brightness(107%) contrast(98%);
   color-scheme: dark;
 
   --link-color: color-mix(in srgb, var(--pen-light-blue) 60%, var(--pen-white));
-  --link-color-hover: color-mix(
-    in srgb,
-    var(--pen-light-blue) 20%,
-    var(--pen-white)
-  );
+  --link-color-hover: color-mix(in srgb,
+      var(--pen-light-blue) 20%,
+      var(--pen-white));
 }
+
 .embed-blueprint img {
   background-color: var(--page-blue);
 }
 
 /* Adds a grid layout on page background */
 .page-grid {
-  background-image: linear-gradient(
-      0deg,
+  background-image: linear-gradient(0deg,
       transparent 0px,
       var(--accent-color-trans) 1px,
       var(--accent-color-trans) 2px,
-      transparent 3px
-    ),
-    linear-gradient(
-      90deg,
+      transparent 3px),
+    linear-gradient(90deg,
       transparent calc(var(--grid-size) - 3px),
       var(--accent-color-trans) calc(var(--grid-size) - 2px),
       var(--accent-color-trans) calc(var(--grid-size) - 1px),
-      transparent var(--grid-size)
-    );
+      transparent var(--grid-size));
   background-size: var(--grid-size) var(--grid-size);
 }
 
@@ -2499,38 +2465,32 @@ https://angel-rs.github.io/css-color-filter-generator
     https://angel-rs.github.io/css-color-filter-generator */
 
 /* SVGs */
-:is(
-    .page-white,
-    .page-manila,
-    .page-blueprint,
-    .pen-white,
-    .pen-blue,
-    .pen-red,
-    .pen-green,
-    .pen-black,
-    .pen-gray,
-    .pen-purple
-  )
-  svg {
+:is(.page-white,
+  .page-manila,
+  .page-blueprint,
+  .pen-white,
+  .pen-blue,
+  .pen-red,
+  .pen-green,
+  .pen-black,
+  .pen-gray,
+  .pen-purple) svg {
   color: color-mix(in srgb, var(--accent-color) 60%, transparent);
 }
 
 /* Code Blocks */
 :is(.page-white, .page-manila, .page-blueprint) :is(code,
-.HyperMD-codeblock, .cm-inline-code) {
+  .HyperMD-codeblock, .cm-inline-code) {
   --code-normal: var(--accent-color);
-  --code-background: color-mix(
-    in srgb,
-    var(--page-color) 80%,
-    black
-  ) !important;
+  --code-background: color-mix(in srgb,
+      var(--page-color) 80%,
+      black) !important;
 }
-div > pre {
-  --code-background: color-mix(
-    in srgb,
-    var(--page-color) 80%,
-    black
-  ) !important;
+
+div>pre {
+  --code-background: color-mix(in srgb,
+      var(--page-color) 80%,
+      black) !important;
 }
 
 :is(.page-white, .page-manila, .page-blueprint) {
@@ -2544,56 +2504,55 @@ div > pre {
   --accent-color-trans: color-mix(in srgb, var(--pen-white) 15%, transparent);
   color: var(--accent-color);
   --hr-color: var(--accent-color);
-  --image-effect: brightness(0) saturate(100%) invert(89%) sepia(1%)
-    saturate(2714%) hue-rotate(196deg) brightness(107%) contrast(98%);
+  --image-effect: brightness(0) saturate(100%) invert(89%) sepia(1%) saturate(2714%) hue-rotate(196deg) brightness(107%) contrast(98%);
 }
+
 .pen-blue {
   --accent-color: var(--pen-blue);
   --accent-color-trans: color-mix(in srgb, var(--pen-blue) 15%, transparent);
   color: var(--accent-color);
   --hr-color: var(--accent-color);
-  --image-effect: brightness(0) saturate(100%) invert(36%) sepia(95%)
-    saturate(945%) hue-rotate(199deg) brightness(95%) contrast(95%);
+  --image-effect: brightness(0) saturate(100%) invert(36%) sepia(95%) saturate(945%) hue-rotate(199deg) brightness(95%) contrast(95%);
 }
+
 .pen-red {
   --accent-color: var(--pen-red);
   --accent-color-trans: color-mix(in srgb, var(--pen-red) 15%, transparent);
   color: var(--accent-color);
   --hr-color: var(--accent-color);
-  --image-effect: brightness(0) saturate(100%) invert(40%) sepia(41%)
-    saturate(1024%) hue-rotate(316deg) brightness(99%) contrast(94%);
+  --image-effect: brightness(0) saturate(100%) invert(40%) sepia(41%) saturate(1024%) hue-rotate(316deg) brightness(99%) contrast(94%);
 }
+
 .pen-green {
   --accent-color: var(--pen-green);
   --accent-color-trans: color-mix(in srgb, var(--pen-green) 15%, transparent);
   color: var(--accent-color);
   --hr-color: var(--accent-color);
-  --image-effect: brightness(0) saturate(100%) invert(52%) sepia(60%)
-    saturate(2521%) hue-rotate(105deg) brightness(96%) contrast(84%);
+  --image-effect: brightness(0) saturate(100%) invert(52%) sepia(60%) saturate(2521%) hue-rotate(105deg) brightness(96%) contrast(84%);
 }
+
 .pen-black {
   --accent-color: var(--pen-black);
   --accent-color-trans: color-mix(in srgb, var(--pen-black) 15%, transparent);
   color: var(--accent-color);
   --hr-color: var(--accent-color);
-  --image-effect: brightness(0) saturate(100%) invert(14%) sepia(19%)
-    saturate(296%) hue-rotate(5deg) brightness(90%) contrast(96%);
+  --image-effect: brightness(0) saturate(100%) invert(14%) sepia(19%) saturate(296%) hue-rotate(5deg) brightness(90%) contrast(96%);
 }
+
 .pen-gray {
   --accent-color: var(--pen-gray);
   --accent-color-trans: color-mix(in srgb, var(--pen-gray) 15%, transparent);
   color: var(--accent-color);
   --hr-color: var(--accent-color);
-  --image-effect: brightness(0) saturate(100%) invert(35%) sepia(13%)
-    saturate(189%) hue-rotate(5deg) brightness(96%) contrast(86%);
+  --image-effect: brightness(0) saturate(100%) invert(35%) sepia(13%) saturate(189%) hue-rotate(5deg) brightness(96%) contrast(86%);
 }
+
 .pen-purple {
   --accent-color: var(--pen-purple);
   --accent-color-trans: color-mix(in srgb, var(--pen-purple) 15%, transparent);
   color: var(--accent-color);
   --hr-color: var(--accent-color);
-  --image-effect: brightness(0) saturate(100%) invert(33%) sepia(59%)
-    saturate(2620%) hue-rotate(249deg) brightness(98%) contrast(93%);
+  --image-effect: brightness(0) saturate(100%) invert(33%) sepia(59%) saturate(2620%) hue-rotate(249deg) brightness(98%) contrast(93%);
 }
 
 
@@ -2661,21 +2620,18 @@ img {
   border-radius: 6px;
 }
 
-.center-titles
-  :is(
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    .HyperMD-header.HyperMD-header-1,
-    .HyperMD-header.HyperMD-header-2,
-    .HyperMD-header.HyperMD-header-3,
-    .HyperMD-header.HyperMD-header-4,
-    .HyperMD-header.HyperMD-header-5,
-    .HyperMD-header.HyperMD-header-6
-  ) {
+.center-titles :is(h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .HyperMD-header.HyperMD-header-1,
+  .HyperMD-header.HyperMD-header-2,
+  .HyperMD-header.HyperMD-header-3,
+  .HyperMD-header.HyperMD-header-4,
+  .HyperMD-header.HyperMD-header-5,
+  .HyperMD-header.HyperMD-header-6) {
   text-align: center;
 }
 
