@@ -1,5 +1,11 @@
 {
   "enabledCssSnippets": [
-    "premium-ui"
-  ]
+    "premium-ui",
+    "pro-notes"
+  ],
+  "interfaceFontFamily": "Arial",
+  "textFontFamily": "Source Code Pro",
+  "monospaceFontFamily": "Ebrima",
+  "theme": "obsidian",
+  "cssTheme": "Minimal"
 }

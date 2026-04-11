@@ -1,0 +1,102 @@
+/* =========================
+   PAGE WIDTH + CENTERING
+========================= */
+.markdown-preview-view {
+  max-width: 900px;
+  margin: auto;
+  line-height: 1.7;
+  font-size: 15.5px;
+  color: #d6d6d6;
+}
+
+/* =========================
+   HEADINGS (IMPORTANT)
+========================= */
+.markdown-preview-view h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 6px;
+}
+
+.markdown-preview-view h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 25px;
+  color: #8ab4f8;
+}
+
+.markdown-preview-view h3 {
+  font-size: 18px;
+  margin-top: 20px;
+  color: #c792ea;
+}
+
+/* =========================
+   PARAGRAPHS
+========================= */
+.markdown-preview-view p {
+  margin-bottom: 12px;
+}
+
+/* =========================
+   LISTS (clean spacing)
+========================= */
+.markdown-preview-view ul,
+.markdown-preview-view ol {
+  padding-left: 20px;
+  margin-bottom: 12px;
+}
+
+/* =========================
+   CODE BLOCKS (developer feel)
+========================= */
+pre {
+  background: #0f1720;
+  border-radius: 10px;
+  padding: 14px;
+  font-size: 13px;
+  overflow-x: auto;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+/* =========================
+   INLINE CODE
+========================= */
+code {
+  background: rgba(255,255,255,0.08);
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+/* =========================
+   IMAGES / DIAGRAMS
+========================= */
+img {
+  border-radius: 12px;
+  margin: 15px 0;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* =========================
+   BLOCKQUOTE (pro highlight)
+========================= */
+blockquote {
+  border-left: 4px solid #8ab4f8;
+  padding-left: 12px;
+  color: #aaa;
+  margin: 15px 0;
+}
+
+/* =========================
+   SECTION CARDS (VERY COOL)
+========================= */
+hr {
+  border: none;
+  height: 1px;
+  background: rgba(255,255,255,0.1);
+  margin: 30px 0;
+}
