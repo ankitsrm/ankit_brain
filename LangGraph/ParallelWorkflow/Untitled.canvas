@@ -25,12 +25,12 @@
 		{
 			"id":"8001a982c8f12480",
 			"type":"text",
-			"text":"I am still looking to much thing which ",
+			"text":"I am still looking to much thing which After this  Spark Session will start the `executors`\nas we configured the CPU, Memory, Executors are \nConfigured to the spark session.\n\nwork as Driver allocation and as well providing resources like\n\t- Cluster manager\n\t- Resource Manager \n\t- Container Manager ",
 			"styleAttributes":{},
 			"x":-3220,
 			"y":-1000,
-			"width":580,
-			"height":240
+			"width":740,
+			"height":260
 		}
 	],
 	"edges":[
@@ -41,6 +41,15 @@
 			"fromNode":"9f8085c0d2e697f5",
 			"fromSide":"right",
 			"toNode":"6c5e2caec005483f",
+			"toSide":"left"
+		},
+		{
+			"id":"6cb9d2f7438af694",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"9f8085c0d2e697f5",
+			"fromSide":"right",
+			"toNode":"8001a982c8f12480",
 			"toSide":"left"
 		}
 	],
