@@ -68,3 +68,9 @@ td:contains("healthy") {
 .markdown-preview-view {
   background: #0b0f14;
 }
+```
+
+```python
+import numpy
+print(hello)
+```
