@@ -3,4 +3,4 @@
 1)  Text Feedback
 2)  Generate a score 0-10
 
-Iske baad by all 3 nodes value will be move to final evalution node 
+Iske baad by all 3 nodes value will be move to final evolution node ke pass
