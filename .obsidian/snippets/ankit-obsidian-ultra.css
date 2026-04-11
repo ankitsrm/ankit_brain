@@ -440,13 +440,12 @@ body {
 /* ─── Code blocks (terminal style) ────────────────────────── */
 .markdown-rendered pre,
 .markdown-preview-view pre {
-  background: #0c0c10 !important;
-  border: 1px solid var(--border-normal) !important;
-  border-radius: var(--radius-sm) !important;
-  padding: 0.9rem 1.1rem !important;
-  margin: 0.7rem 0 !important;
-  box-shadow: var(--shadow-inset),
-    var(--shadow-sm) !important;
+  background: #08080a !important; /* Deep contrast */
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: var(--radius-md) !important;
+  padding: 1rem 1.2rem !important;
+  margin: 0.8rem 0 !important;
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.5), 0 4px 12px rgba(0, 0, 0, 0.4) !important;
   position: relative !important;
   overflow-x: auto !important;
 }
@@ -454,12 +453,30 @@ body {
 /* Traffic-light dots */
 .markdown-rendered pre::before,
 .markdown-preview-view pre::before {
-  content: '●  ●  ●';
-  display: block;
-  font-size: 6px;
-  letter-spacing: 3px;
-  color: rgba(255, 255, 255, 0.08);
-  margin-bottom: 8px;
+  content: '●  ●  ●' !important;
+  display: block !important;
+  font-size: 7px !important;
+  letter-spacing: 4px !important;
+  color: rgba(255, 255, 255, 0.15) !important;
+  margin-bottom: 12px !important;
+}
+
+/* Beautiful Floating Language Badge */
+.markdown-rendered pre[class*="language-"]::after,
+.markdown-preview-view pre[class*="language-"]::after {
+  position: absolute !important;
+  top: 8px !important;
+  right: 8px !important;
+  font-size: 9px !important;
+  font-weight: 700 !important;
+  font-family: 'Inter', sans-serif !important;
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  color: var(--text-secondary) !important;
+  padding: 4px 8px !important;
+  border-radius: 6px !important;
+  letter-spacing: 1px !important;
+  backdrop-filter: blur(8px) !important;
 }
 
 .markdown-rendered pre code,
@@ -2611,20 +2628,26 @@ code {
   background: transparent !important;
 }
 
-/* Keep code blocks seamlessly connected to the background with no separate borders */
+/* Premium Embedded Code Blocks inside Canvas */
 .canvas-node-content pre,
 .canvas-node-content .markdown-rendered pre {
-  margin: 0 !important;
-  border: none !important;
-  border-top: none !important;
-  border-radius: 0 !important;
-  box-shadow: none !important;
-  background: transparent !important;
-  padding: 0 !important;
+  background: #08080a !important; /* Deepest black for code contrast */
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+  border-radius: var(--radius-md) !important;
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.5), 0 4px 12px rgba(0,0,0,0.4) !important;
+  padding: 16px 14px 14px !important;
+  margin: 8px 0 !important;
+  position: relative !important;
 }
 
+/* Mac-style traffic lights for Canvas Code Blocks */
 .canvas-node-content pre::before {
-  display: none !important;
+  content: '●  ●  ●' !important;
+  display: block !important;
+  font-size: 7px !important;
+  letter-spacing: 4px !important;
+  color: rgba(255, 255, 255, 0.15) !important;
+  margin-bottom: 12px !important;
 }
 
 /* Very subtle neutral border for un-colored nodes instead of the harsh gray */

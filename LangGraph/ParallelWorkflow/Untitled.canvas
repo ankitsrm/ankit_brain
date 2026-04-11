@@ -73,6 +73,17 @@
 			"y":-720,
 			"width":260,
 			"height":200
+		},
+		{
+			"id":"25fc580e1ec3d1b4",
+			"type":"text",
+			"text":"This is system generated block needed for transform",
+			"styleAttributes":{},
+			"x":-2295,
+			"y":-1664,
+			"width":292,
+			"height":151,
+			"color":"2"
 		}
 	],
 	"edges":[
@@ -123,6 +134,16 @@
 			"fromSide":"right",
 			"toNode":"6ad73248213560b4",
 			"toSide":"left"
+		},
+		{
+			"id":"395ccb1f74095ba1",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"0840994079a499de",
+			"fromSide":"top",
+			"toNode":"25fc580e1ec3d1b4",
+			"toSide":"left",
+			"color":"2"
 		}
 	],
 	"metadata":{
