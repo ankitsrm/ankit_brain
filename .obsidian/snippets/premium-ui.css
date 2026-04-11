@@ -1,0 +1,31 @@
+/* Better sidebar */
+.workspace-leaf-content[data-type="file-explorer"] {
+  font-size: 13px;
+  letter-spacing: 0.3px;
+}
+
+/* Tags clean look */
+.tag {
+  border-radius: 6px;
+  padding: 2px 6px;
+  font-size: 12px;
+  background-color: rgba(120,120,120,0.1);
+}
+
+/* Headings stronger */
+.markdown-preview-view h1,
+.markdown-preview-view h2 {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Code blocks */
+code, pre {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 13px;
+}
+
+/* Glass effect panels */
+.workspace-leaf {
+  backdrop-filter: blur(8px);
+}
