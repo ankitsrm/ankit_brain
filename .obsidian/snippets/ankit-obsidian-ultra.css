@@ -2578,35 +2578,56 @@ code {
 }
 
 /* ════════════════════════════════════════════════════════════
-   CANVAS - ULTRA MINIMAL 
+   CANVAS - PREMIUM AESTHETIC & SAFE LAYOUT
    ════════════════════════════════════════════════════════════ */
-/* Strip away all inner padding so text connects completely top-to-bottom */
+
+/* Canvas environment background */
+.canvas-wrapper {
+  background: var(--ultra-void) !important;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.04) 1px, transparent 1px) !important;
+  background-size: 24px 24px !important;
+}
+
+/* Premium Glass Nodes (Preserving native border colors for red/green logic) */
+.canvas-node {
+  background: rgba(14, 14, 18, 0.8) !important;
+  border-radius: var(--radius-lg) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.05) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.canvas-node:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Comfortable text padding so it breathes beautifully without double borders */
 .canvas-node-content,
 .canvas-node-content .markdown-rendered,
 .canvas-node-content .markdown-preview-view {
-  padding: 0 !important;
+  padding: 12px 18px !important;
   margin: 0 !important;
   border: none !important;
   background: transparent !important;
 }
 
-/* Strip inner borders and backgrounds from accidental code blocks */
+/* Keep code blocks seamlessly connected to the background with no separate borders */
 .canvas-node-content pre,
 .canvas-node-content .markdown-rendered pre {
   margin: 0 !important;
   border: none !important;
+  border-top: none !important;
   border-radius: 0 !important;
   box-shadow: none !important;
   background: transparent !important;
-  padding: 0 8px !important;
+  padding: 0 !important;
 }
 
 .canvas-node-content pre::before {
   display: none !important;
 }
 
-/* Hide the default light grey border of nodes (keep colors for focus/groups) */
+/* Very subtle neutral border for un-colored nodes instead of the harsh gray */
 .canvas-node:not(.is-focused):not([data-color]) {
-  border-color: transparent !important;
-  box-shadow: var(--shadow-sm) !important;
+  border-color: rgba(255, 255, 255, 0.03) !important;
 }
