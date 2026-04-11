@@ -1,10 +1,11 @@
 {
   "enabledCssSnippets": [
-    "pro-notes"
+    "pro-notes",
+    "ankit_glass_dark"
   ],
-  "interfaceFontFamily": "Arial",
-  "textFontFamily": "Source Code Pro",
-  "monospaceFontFamily": "Ebrima",
+  "interfaceFontFamily": "JetBrains Mono",
+  "textFontFamily": "JetBrains Mono NL",
+  "monospaceFontFamily": "JetBrains Mono",
   "theme": "obsidian",
   "cssTheme": "Minimal"
 }
