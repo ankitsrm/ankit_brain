@@ -1356,12 +1356,12 @@ mark {
 /* Modal */
 .modal-container .modal,
 .modal {
-  background: rgba(6, 6, 8, 0.97) !important;
-  border: 1px solid var(--border-normal) !important;
+  background: rgba(0, 0, 0, 0.85) !important;
+  border: 1px solid var(--border-subtle) !important;
   border-radius: var(--radius-lg) !important;
-  box-shadow: var(--shadow-lg) !important;
-  backdrop-filter: blur(20px) !important;
-  -webkit-backdrop-filter: blur(20px) !important;
+  box-shadow: var(--shadow-lg), inset 0 1px 0 rgba(255, 255, 255, 0.05) !important;
+  backdrop-filter: blur(24px) !important;
+  -webkit-backdrop-filter: blur(24px) !important;
 }
 
 /* ════════════════════════════════════════════════════════════
@@ -1407,7 +1407,23 @@ mark {
 .canvas-node-content .markdown-rendered {
   font-size: 12.5px !important;
   line-height: 1.5 !important;
-  padding: 8px 12px !important;
+  padding: 0 !important;
+}
+
+.canvas-node-content .markdown-rendered pre,
+.canvas-node-content .markdown-preview-view pre,
+.canvas-node-content pre {
+  margin: 0 !important;
+  border: none !important;
+  border-top: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+.canvas-node-content .markdown-rendered pre::before,
+.canvas-node-content .markdown-preview-view pre::before {
+  display: none !important;
 }
 
 .canvas-node-content .markdown-preview-view {
@@ -1705,12 +1721,12 @@ mark {
    ════════════════════════════════════════════════════════════ */
 
 .modal-container .vertical-tab-header {
-  background: var(--ultra-void) !important;
+  background: transparent !important;
   border-right: 1px solid var(--border-ghost) !important;
 }
 
 .vertical-tab-nav-item {
-  color: var(--text-muted) !important;
+  color: var(--text-ghost) !important;
   border-radius: var(--radius-sm) !important;
   transition: all var(--duration-fast) var(--ease-out) !important;
 }
@@ -1726,7 +1742,22 @@ mark {
 }
 
 .vertical-tab-content {
-  background: var(--ultra-base) !important;
+  background: transparent !important;
+}
+
+/* Glassy Setting Items */
+.setting-item {
+  background: rgba(255, 255, 255, 0.015) !important;
+  border: 1px solid rgba(255, 255, 255, 0.03) !important;
+  border-radius: var(--radius-md) !important;
+  padding: 16px 20px !important;
+  margin-bottom: 12px !important;
+  transition: all var(--duration-fast) var(--ease-out) !important;
+}
+
+.setting-item:hover {
+  background: rgba(255, 255, 255, 0.03) !important;
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
 }
 
 
