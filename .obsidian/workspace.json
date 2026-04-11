@@ -13,15 +13,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "LangGraph/ParallelWorkflow/Untitled.canvas",
+                "file": "LangGraph/ParallelWorkflow/Untitled 1.canvas",
                 "viewState": {
-                  "x": -2850,
-                  "y": -1092,
+                  "x": 14,
+                  "y": 96,
                   "zoom": 0
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "Untitled"
+              "title": "Untitled 1"
             }
           },
           {
@@ -220,8 +220,8 @@
   },
   "active": "516a266c08488810",
   "lastOpenFiles": [
-    "LangGraph/ParallelWorkflow/Parallel Workflow.md",
     "LangGraph/ParallelWorkflow/Untitled.canvas",
+    "LangGraph/ParallelWorkflow/Parallel Workflow.md",
     "LangGraph/ParallelWorkflow/Untitled 1.canvas",
     "Excalidraw/Drawing 2026-04-11 16.11.19.excalidraw.md",
     "Ankit_running.md",

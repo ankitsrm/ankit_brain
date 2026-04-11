@@ -3,12 +3,12 @@
 		{
 			"id":"d458625c9a0d7b6b",
 			"type":"text",
-			"text":"",
+			"text":"```python\n\nprint('Hellow')\n```\n\n```java\npublic info() {\n\tsystem.out.println(\"112213\")\n}\n```\n",
 			"styleAttributes":{},
 			"x":-380,
 			"y":-140,
-			"width":400,
-			"height":300
+			"width":788,
+			"height":472
 		}
 	],
 	"edges":[],
