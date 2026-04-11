@@ -9,13 +9,13 @@
 
 /* ─── DESIGN TOKENS ────────────────────────────────────────── */
 :root {
-  /* === BACKGROUNDS — DARK CHARCOAL === */
-  --ultra-void:        #111116;
-  --ultra-base:        #161619;
-  --ultra-surface:     #1a1a1e;
-  --ultra-raised:      #1f1f24;
-  --ultra-overlay:     #252529;
-  --ultra-hover:       #2a2a2f;
+  /* === BACKGROUNDS — DEEP DARK === */
+  --ultra-void:        #08080a;
+  --ultra-base:        #0c0c0f;
+  --ultra-surface:     #111114;
+  --ultra-raised:      #15151a;
+  --ultra-overlay:     #1a1a20;
+  --ultra-hover:       #202026;
 
   /* === GLASS LAYERS === */
   --glass-1:           rgba(255, 255, 255, 0.025);

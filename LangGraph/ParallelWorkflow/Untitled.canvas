@@ -1,5 +1,6 @@
 {
 	"nodes":[
+		{"id":"0840994079a499de","type":"group","x":-3680,"y":-1480,"width":1220,"height":760,"label":"Untitled group"},
 		{
 			"id":"6c5e2caec005483f",
 			"type":"text",
@@ -30,7 +31,8 @@
 			"x":-3220,
 			"y":-1000,
 			"width":740,
-			"height":260
+			"height":260,
+			"color":"4"
 		}
 	],
 	"edges":[
@@ -41,16 +43,19 @@
 			"fromNode":"9f8085c0d2e697f5",
 			"fromSide":"right",
 			"toNode":"6c5e2caec005483f",
-			"toSide":"left"
+			"toSide":"left",
+			"color":"1"
 		},
 		{
 			"id":"6cb9d2f7438af694",
 			"styleAttributes":{},
 			"toFloating":false,
+			"fromFloating":false,
 			"fromNode":"9f8085c0d2e697f5",
 			"fromSide":"right",
 			"toNode":"8001a982c8f12480",
-			"toSide":"left"
+			"toSide":"left",
+			"color":"4"
 		}
 	],
 	"metadata":{
