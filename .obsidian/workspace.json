@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "Ankit_running"
             }
+          },
+          {
+            "id": "fa1ad16743b57413",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2026-04-11 16.11.19.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-04-11 16.11.19.excalidraw"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -181,15 +194,18 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "3e46d53a8cc3d59f",
+  "active": "fa1ad16743b57413",
   "lastOpenFiles": [
+    "Ankit_running.md",
+    "Excalidraw/Drawing 2026-04-11 16.11.19.excalidraw.md",
+    "Excalidraw",
     "LangGraph/ParallelWorkflow",
     "LangGraph",
     "claude/ai.md",
-    "Ankit_running.md",
     "claude"
   ]
 }
