@@ -25,12 +25,14 @@
             "id": "fa1ad16743b57413",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/Drawing 2026-04-11 16.11.19.excalidraw.md"
+                "file": "LangGraph/ParallelWorkflow/Parallel Workflow.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-04-11 16.11.19.excalidraw"
+              "icon": "lucide-file",
+              "title": "Parallel Workflow"
             }
           }
         ],
@@ -200,8 +202,9 @@
   },
   "active": "fa1ad16743b57413",
   "lastOpenFiles": [
-    "Ankit_running.md",
     "Excalidraw/Drawing 2026-04-11 16.11.19.excalidraw.md",
+    "LangGraph/ParallelWorkflow/Parallel Workflow.md",
+    "Ankit_running.md",
     "Excalidraw",
     "LangGraph/ParallelWorkflow",
     "LangGraph",
