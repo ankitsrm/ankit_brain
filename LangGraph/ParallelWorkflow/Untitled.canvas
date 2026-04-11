@@ -39,10 +39,30 @@
 			"type":"text",
 			"text":"Trying to rescue and not working as excepted running in system",
 			"styleAttributes":{},
-			"x":-4060,
-			"y":-1220,
+			"x":-4240,
+			"y":-1360,
 			"width":260,
 			"height":140
+		},
+		{
+			"id":"c8e521ec7a090ede",
+			"type":"text",
+			"text":"can you see this spacing box are not oppening properly and saving it to the place \n",
+			"styleAttributes":{},
+			"x":-4180,
+			"y":-1020,
+			"width":260,
+			"height":150
+		},
+		{
+			"id":"6ad73248213560b4",
+			"type":"text",
+			"text":"ok, I am using Obsidian and my UI is broken.\n\nProblems:\n\n- Tab bar spacing is broken (tabs overlapping / compressed)\n- Sidebar text and tags have too much letter spacing (like T a g s)\n- Fonts look stretched and unreadable\n- Layout looks compressed and not aligned properly\n\nI suspect CSS snippets or theme overrides are causing this.\n\nPlease help me:\n\n1. Identify CSS rules causing excessive letter-spacing, word-spacing, or flex issues\n2. Fix tab bar layout (workspace-tabs, workspace-tab-header)\n3. Reset fonts to normal (no stretching)\n4. Provide a clean CSS fix that:\n    - Restores normal spacing\n    - Fixes tab bar alignment\n    - Keeps a modern dark UI\n\nAlso give:\n\n- A minimal safe CSS reset for Obsidian UI\n- Specific selectors for sidebar, tags, and tabs\n\nAssume I am using a dark theme (like Minimal or similar).\n\nOutput only working CSS + explanation.",
+			"styleAttributes":{},
+			"x":-2240,
+			"y":-1480,
+			"width":780,
+			"height":840
 		}
 	],
 	"edges":[
@@ -74,6 +94,24 @@
 			"fromNode":"6add5bbf82899dc1",
 			"fromSide":"right",
 			"toNode":"0840994079a499de",
+			"toSide":"left"
+		},
+		{
+			"id":"bab70267ee3991d0",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"c8e521ec7a090ede",
+			"fromSide":"right",
+			"toNode":"9f8085c0d2e697f5",
+			"toSide":"left"
+		},
+		{
+			"id":"3a7ad16cd766de82",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"0840994079a499de",
+			"fromSide":"right",
+			"toNode":"6ad73248213560b4",
 			"toSide":"left"
 		}
 	],

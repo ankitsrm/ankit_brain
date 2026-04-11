@@ -129,13 +129,10 @@ body {
 /* ─── Ribbon (far-left icon bar) ──────────────────────────── */
 .workspace-ribbon {
   background: var(--ultra-void) !important;
-  border-right: 1px solid var(--border-ghost) !important;
 }
 
 .workspace-ribbon .clickable-icon {
   color: var(--text-muted) !important;
-  border-radius: var(--radius-sm) !important;
-  transition: all var(--duration-fast) var(--ease-out) !important;
 }
 
 .workspace-ribbon .clickable-icon:hover {
@@ -263,19 +260,13 @@ body {
 /* ─── Tab bar ─────────────────────────────────────────────── */
 .workspace-tab-header-container {
   background: var(--ultra-void) !important;
-  border-bottom: 1px solid var(--border-ghost) !important;
 }
 
 .workspace-tab-header {
-  font-size: 12px !important;
-  font-weight: 400 !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
   color: var(--text-muted) !important;
   background: transparent !important;
-  border: none !important;
-  border-bottom: 2px solid transparent !important;
-  border-radius: 0 !important;
-  padding: 8px 18px !important;
-  transition: all var(--duration-fast) var(--ease-out) !important;
 }
 
 .workspace-tab-header:hover {
@@ -284,8 +275,8 @@ body {
 
 .workspace-tab-header.is-active {
   color: var(--text-bright) !important;
-  border-bottom: 2px solid var(--acc-blue) !important;
-  background: transparent !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+  border-radius: var(--radius-md) var(--radius-md) 0 0 !important;
 }
 
 
