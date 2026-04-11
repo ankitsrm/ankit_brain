@@ -184,8 +184,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "516a266c08488810",
+  "active": "3e46d53a8cc3d59f",
   "lastOpenFiles": [
-    "Ankit_running.md"
+    "claude/ai.md",
+    "Ankit_running.md",
+    "claude"
   ]
 }
