@@ -1337,20 +1337,14 @@ mark {
   border: 1px solid var(--border-normal) !important;
   border-radius: var(--radius-md) !important;
   box-shadow: var(--shadow-md) !important;
-  backdrop-filter: blur(16px) !important;
-  -webkit-backdrop-filter: blur(16px) !important;
-  transition: all var(--duration-normal) var(--ease-out) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   
-  /* AUTO-SCALING HACK */
-  height: fit-content !important;
-  min-height: 100px !important;
-  padding-bottom: 12px !important;
 }
 
 .canvas-node:hover {
   border-color: var(--border-bright) !important;
   box-shadow: var(--shadow-md), 0 0 24px rgba(91, 156, 245, 0.08) !important;
-  transform: translateY(-1px) !important;
 }
 
 .canvas-node.is-focused {
@@ -1360,15 +1354,12 @@ mark {
               var(--shadow-md) !important;
 }
 
-/* Node content area */
+/* Node content typography (safe overrides only) */
 .canvas-node-content {
   background: transparent !important;
-  padding: 0 !important;
-  height: auto !important; /* Allow internal content to overflow appropriately */
 }
 
 .canvas-node-content .markdown-rendered {
-  padding: 12px 16px !important;
   font-size: 12.5px !important;
   line-height: 1.5 !important;
 }
