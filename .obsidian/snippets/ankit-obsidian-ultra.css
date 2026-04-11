@@ -100,14 +100,7 @@ textarea {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
 }
 
-/* Editor & Reading View Mono Font */
-.markdown-preview-view,
-.markdown-rendered,
-.cm-editor,
-.cm-content,
-.cm-line {
-  font-family: 'JetBrains Mono', 'Cascadia Code', 'Fira Code', monospace !important;
-}
+
 
 
 /* ════════════════════════════════════════════════════════════

@@ -11,17 +11,14 @@
             "id": "516a266c08488810",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "LangGraph/ParallelWorkflow/Untitled.canvas",
-                "viewState": {
-                  "x": -2850,
-                  "y": -1092,
-                  "zoom": 0
-                }
+                "file": "LangGraph/ParallelWorkflow/Parallel Workflow.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Untitled"
+              "icon": "lucide-file",
+              "title": "Parallel Workflow"
             }
           },
           {
@@ -220,8 +217,8 @@
   },
   "active": "516a266c08488810",
   "lastOpenFiles": [
-    "LangGraph/ParallelWorkflow/Parallel Workflow.md",
     "LangGraph/ParallelWorkflow/Untitled.canvas",
+    "LangGraph/ParallelWorkflow/Parallel Workflow.md",
     "LangGraph/ParallelWorkflow/Untitled 1.canvas",
     "Excalidraw/Drawing 2026-04-11 16.11.19.excalidraw.md",
     "Ankit_running.md",
