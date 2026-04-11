@@ -63,6 +63,16 @@
 			"y":-1480,
 			"width":780,
 			"height":840
+		},
+		{
+			"id":"83a842d422803fd1",
+			"type":"text",
+			"text":"Border ",
+			"styleAttributes":{},
+			"x":-4140,
+			"y":-720,
+			"width":260,
+			"height":200
 		}
 	],
 	"edges":[

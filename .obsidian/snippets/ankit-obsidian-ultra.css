@@ -1364,91 +1364,7 @@ mark {
   -webkit-backdrop-filter: blur(24px) !important;
 }
 
-/* ════════════════════════════════════════════════════════════
-   SECTION 10 — CANVAS (Premium Styling & Auto-Scale)
-   ════════════════════════════════════════════════════════════ */
 
-/* Canvas background — subtle dot grid */
-.canvas-wrapper {
-  background: var(--ultra-void) !important;
-  background-image:
-    radial-gradient(circle, rgba(255, 255, 255, 0.03) 1px, transparent 1px) !important;
-  background-size: 24px 24px !important;
-}
-
-/* ─── Card Nodes (glassmorphic + auto-height) ────────────── */
-.canvas-node {
-  background: rgba(16, 16, 20, 0.9) !important;
-  border: 1px solid var(--border-normal) !important;
-  border-radius: var(--radius-md) !important;
-  box-shadow: var(--shadow-md) !important;
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-
-}
-
-.canvas-node:hover {
-  border-color: var(--border-bright) !important;
-  box-shadow: var(--shadow-md), 0 0 24px rgba(91, 156, 245, 0.08) !important;
-}
-
-.canvas-node.is-focused {
-  border-color: var(--acc-blue) !important;
-  box-shadow: 0 0 0 2px var(--acc-blue-dim),
-    0 0 30px rgba(91, 156, 245, 0.12),
-    var(--shadow-md) !important;
-}
-
-/* Node content typography (safe overrides only) */
-.canvas-node-content {
-  background: transparent !important;
-}
-
-.canvas-node-content .markdown-rendered {
-  font-size: 12.5px !important;
-  line-height: 1.5 !important;
-  padding: 0 !important;
-}
-
-.canvas-node-content .markdown-rendered pre,
-.canvas-node-content .markdown-preview-view pre,
-.canvas-node-content pre {
-  margin: 0 !important;
-  border: none !important;
-  border-top: none !important;
-  border-radius: 0 !important;
-  box-shadow: none !important;
-  background: transparent !important;
-}
-
-.canvas-node-content .markdown-rendered pre::before,
-.canvas-node-content .markdown-preview-view pre::before {
-  display: none !important;
-}
-
-.canvas-node-content .markdown-preview-view {
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-/* ─── Text Card Typography ────────────────────────────────── */
-.canvas-node-label {
-  font-family: 'JetBrains Mono', monospace !important;
-  font-size: 12px !important;
-  color: var(--text-primary) !important;
-  padding: 8px 12px !important;
-}
-
-/* Text inside canvas text nodes */
-.canvas-node .inline-title {
-  font-family: 'JetBrains Mono', monospace !important;
-  font-size: 14px !important;
-  font-weight: 600 !important;
-  color: var(--text-bright) !important;
-  border-bottom: 1px solid var(--border-ghost) !important;
-  padding-bottom: 6px !important;
-  margin-bottom: 6px !important;
-}
 
 /* ─── Colored Nodes ───────────────────────────────────────── */
 .canvas-node[data-color="1"] {
@@ -2659,4 +2575,38 @@ img {
 
 code {
   font-family: "JetBrainsMono Nerd Font Mono", monospace;
+}
+
+/* ════════════════════════════════════════════════════════════
+   CANVAS - ULTRA MINIMAL 
+   ════════════════════════════════════════════════════════════ */
+/* Strip away all inner padding so text connects completely top-to-bottom */
+.canvas-node-content,
+.canvas-node-content .markdown-rendered,
+.canvas-node-content .markdown-preview-view {
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+  background: transparent !important;
+}
+
+/* Strip inner borders and backgrounds from accidental code blocks */
+.canvas-node-content pre,
+.canvas-node-content .markdown-rendered pre {
+  margin: 0 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  padding: 0 8px !important;
+}
+
+.canvas-node-content pre::before {
+  display: none !important;
+}
+
+/* Hide the default light grey border of nodes (keep colors for focus/groups) */
+.canvas-node:not(.is-focused):not([data-color]) {
+  border-color: transparent !important;
+  box-shadow: var(--shadow-sm) !important;
 }
