@@ -61,9 +61,9 @@
               "state": {
                 "file": "obsidian_vault/knowledge_map.canvas",
                 "viewState": {
-                  "x": 0,
-                  "y": -496.8649189778591,
-                  "zoom": -0.21094176059844588
+                  "x": 529,
+                  "y": -552.9853958430815,
+                  "zoom": -0.4479161889913003
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -251,9 +251,12 @@
   },
   "active": "fa1ad16743b57413",
   "lastOpenFiles": [
+    "obsidian_vault1/knowledge_map.canvas",
+    "obsidian_vault/knowledge_map.canvas",
+    "obsidian_vault1/knowledge_base.md",
+    "obsidian_vault1",
     "obsidian_vault/knowledge_base.md",
     "Excalidraw/Drawing 2026-04-11 16.11.19.excalidraw.md",
-    "obsidian_vault/knowledge_map.canvas",
     "obsidian_vault",
     "LangGraph/ParallelWorkflow/Parallel Workflow.md",
     "LangGraph/ParallelWorkflow/Untitled.canvas",
