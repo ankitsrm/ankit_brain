@@ -241,16 +241,15 @@
       "bases:Create new base": false,
       "obsidian-git:Open Git source control": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "terminal:Open terminal": false,
-      "smart-composer:Open smart composer": false
+      "terminal:Open terminal": false
     }
   },
   "active": "fa1ad16743b57413",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2026-04-11 16.11.19.excalidraw.md",
     "LangGraph/ParallelWorkflow/Parallel Workflow.md",
     "LangGraph/ParallelWorkflow/Untitled.canvas",
     "LangGraph/ParallelWorkflow/Untitled 1.canvas",
-    "Excalidraw/Drawing 2026-04-11 16.11.19.excalidraw.md",
     "Ankit_running.md",
     "image.md",
     "upscaiagent1.png",
