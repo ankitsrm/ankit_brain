@@ -57,12 +57,17 @@
             "id": "fa1ad16743b57413",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "canvas",
               "state": {
-                "file": "Excalidraw/Drawing 2026-04-11 16.11.19.excalidraw.md"
+                "file": "obsidian_vault/knowledge_map.canvas",
+                "viewState": {
+                  "x": 0,
+                  "y": -496.8649189778591,
+                  "zoom": -0.21094176059844588
+                }
               },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-04-11 16.11.19.excalidraw"
+              "icon": "lucide-layout-dashboard",
+              "title": "knowledge_map"
             }
           }
         ],
@@ -246,7 +251,10 @@
   },
   "active": "fa1ad16743b57413",
   "lastOpenFiles": [
+    "obsidian_vault/knowledge_base.md",
     "Excalidraw/Drawing 2026-04-11 16.11.19.excalidraw.md",
+    "obsidian_vault/knowledge_map.canvas",
+    "obsidian_vault",
     "LangGraph/ParallelWorkflow/Parallel Workflow.md",
     "LangGraph/ParallelWorkflow/Untitled.canvas",
     "LangGraph/ParallelWorkflow/Untitled 1.canvas",
