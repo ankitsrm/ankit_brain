@@ -57,17 +57,14 @@
             "id": "fa1ad16743b57413",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "obsidian_vault/knowledge_map.canvas",
-                "viewState": {
-                  "x": 529,
-                  "y": -552.9853958430815,
-                  "zoom": -0.4479161889913003
-                }
+                "file": "obsidian_vault/knowledge_base.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "knowledge_map"
+              "icon": "lucide-file",
+              "title": "knowledge_base"
             }
           }
         ],
@@ -251,8 +248,8 @@
   },
   "active": "fa1ad16743b57413",
   "lastOpenFiles": [
-    "obsidian_vault1/knowledge_map.canvas",
     "obsidian_vault/knowledge_map.canvas",
+    "obsidian_vault1/knowledge_map.canvas",
     "obsidian_vault1/knowledge_base.md",
     "obsidian_vault1",
     "obsidian_vault/knowledge_base.md",
