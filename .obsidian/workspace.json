@@ -57,14 +57,17 @@
             "id": "fa1ad16743b57413",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "obsidian_vault/knowledge_base.md",
-                "mode": "source",
-                "source": false
+                "file": "Rough/Untitled.canvas",
+                "viewState": {
+                  "x": 0,
+                  "y": 0,
+                  "zoom": 0
+                }
               },
-              "icon": "lucide-file",
-              "title": "knowledge_base"
+              "icon": "lucide-layout-dashboard",
+              "title": "Untitled"
             }
           }
         ],
@@ -248,8 +251,10 @@
   },
   "active": "fa1ad16743b57413",
   "lastOpenFiles": [
-    "obsidian_vault/knowledge_map.canvas",
     "obsidian_vault/knowledge_base.md",
+    "Rough/Untitled.canvas",
+    "Rough",
+    "obsidian_vault/knowledge_map.canvas",
     "obsidian_vault/topics/Telemetry_Ingestion_and_Normalization.md",
     "obsidian_vault/topics/Knowledge_Integration_and_Memory_Layer.md",
     "obsidian_vault/topics/AIOps_Limitations_and_the_Need_for_GenAI.md",
