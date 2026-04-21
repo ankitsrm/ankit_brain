@@ -57,10 +57,14 @@
             "id": "fa1ad16743b57413",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "obsidian_vault/knowledge_base.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "knowledge_base"
             }
           }
         ],
@@ -244,9 +248,10 @@
   },
   "active": "fa1ad16743b57413",
   "lastOpenFiles": [
-    "obsidian_vault/knowledge_base.md",
-    "obsidian_vault/topics/Knowledge_Integration_and_Memory_Layer.md",
     "obsidian_vault/knowledge_map.canvas",
+    "obsidian_vault/knowledge_base.md",
+    "obsidian_vault/topics/Telemetry_Ingestion_and_Normalization.md",
+    "obsidian_vault/topics/Knowledge_Integration_and_Memory_Layer.md",
     "obsidian_vault/topics/AIOps_Limitations_and_the_Need_for_GenAI.md",
     "obsidian_vault1/knowledge_map.canvas",
     "obsidian_vault1/knowledge_base.md",
