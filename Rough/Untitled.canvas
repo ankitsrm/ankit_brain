@@ -9,6 +9,16 @@
 			"y":-140,
 			"width":136,
 			"height":94
+		},
+		{
+			"id":"93e4e6c19ef6f148",
+			"type":"text",
+			"text":"So the logic is \n\n",
+			"styleAttributes":{},
+			"x":-560,
+			"y":60,
+			"width":1389,
+			"height":448
 		}
 	],
 	"edges":[],
