@@ -59,15 +59,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Rough/Untitled.canvas",
+                "file": "obsidian_vault/knowledge_map.canvas",
                 "viewState": {
-                  "x": 114.5,
-                  "y": 184,
-                  "zoom": 0
+                  "x": 1056.8517137309534,
+                  "y": 987.2683666358203,
+                  "zoom": -0.9999999999999998
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "Untitled"
+              "title": "knowledge_map"
             }
           }
         ],
